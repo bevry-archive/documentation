@@ -1,4 +1,3 @@
-
 ## All languages
 
 ### Spelling
@@ -122,3 +121,27 @@ When not to use parenthesis:
 ### Returning
 
 Each function should have an explicit return, if it doesn't then make it chain. If you wish to utilise CoffeeScripts automatic return ability, then a comment stating you are using this should be used each time.
+
+
+## JavaScript
+
+### JSHint Options
+
+We utilise the following [jshint](http://www.jshint.com) [options](http://www.jshint.com/options/):
+
+```
+# Enforcing
+eqeqeq: true
+laxbreak: true
+undef: true
+newcap: true
+noarg: true
+strict: true
+trailing: true
+
+# Relaxing
+boss: true
+
+# Legacy
+onevar: true
+```
