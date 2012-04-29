@@ -130,18 +130,27 @@ Each function should have an explicit return, if it doesn't then make it chain. 
 We utilise the following [jshint](http://www.jshint.com) [options](http://www.jshint.com/options/):
 
 ```
-# Enforcing
-eqeqeq: true
-laxbreak: true
-undef: true
-newcap: true
-noarg: true
-strict: true
-trailing: true
+// Enforcing
+"eqeqeq": true,
+"laxbreak": true,
+"undef": true,
+"newcap": true,
+"noarg": true,
+"strict": true,
+"trailing": true,
+"onecase": true,
 
-# Relaxing
-boss: true
+// Relaxing
+"boss": true,
+"eqnull": true,
+"evil": true,
+"sub": true,
+"regexdash": true,
 
-# Legacy
-onevar: true
+// Environments
+"browser": true,
+"wsh": true,
+
+// Legacy
+"onevar": false
 ```
