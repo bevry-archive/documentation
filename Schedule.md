@@ -29,7 +29,7 @@ Schedule:
   - Performance: [#216: Differential rendering](https://github.com/bevry/docpad/issues/216) ~ Bevry Team
 - [Query Engine May Batch](https://github.com/bevry/query-engine/issues?milestone=1)
   - Bug: [#11: Boolean value comparison](https://github.com/bevry/query-engine/pull/11) ~ Bevry Team  ✔
-  - Docs: [#10: Finish the Using Wiki Page](https://github.com/bevry/query-engine/issues/10) ~ Bevry Team
+  - Docs: [#10: Finish the Using Wiki Page](https://github.com/bevry/query-engine/issues/10) ~ Bevry Team ✈
 
 If the community is working on particular task, feel free to add the task to the above list with the user handle `~ Community`
 
