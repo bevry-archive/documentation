@@ -8,7 +8,7 @@ Months are split up in the following way:
 - Middle weeks: only coding, no official support (community support still provided) - used to work on the most important coding tasks for that month, without interuption (bug fixes always come first)
 - Last week: verification and releases - used to validate the value of the coding tasks completed, and perform any house cleaning - documentation, fixes, etc.
 
-This separation of duty throughout the weeks allows the Bevry team to remain incredibly focused, without interruption, while accomplishing amazing results.
+This separation of duty throughout the weeks allows the Bevry team to remain incredibly focused, without interruption, while accomplishing amazing results. Without such structure, we have found that the Bevry team members become quite stressed due to the pressures of multi-tasking and an ever-growing todo list. With this approach, stress is eliminated as it is focused on "what we **can** accomplish", rather than "what we **have** to accomplish".
 
 
 ## Current Schedule (May 2011)
