@@ -14,8 +14,8 @@ This separation of duty throughout the weeks allows the Bevry team to remain inc
 ## Current Schedule (May 2011)
 
 Legend:
-- ❤ items marked with a heart have passed validation
-- ✖ items marked with a cross have failed validation
+- ❤ items marked with a heart passed validation
+- ✖ items marked with a cross failed validation
 - ✔ items marked with a tick are completed and ready for validation at the end of the month
 - ✈ items marked with an aeroplane are currently underway
 
