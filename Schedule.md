@@ -22,6 +22,7 @@ Legend:
 Schedule:
 - Company Operations
   - Figure out a new way of organising tasks and team members (current way is stressing) ~ Bevry Team ✈
+  - Come up with email templates to use to respond to common email requests ~ Bevry Team ✈
 - [DocPad May Batch](https://github.com/bevry/docpad/issues?milestone=9)
   - Bug: [#208: File extensions being trimmed](https://github.com/bevry/docpad/issues/208) ~ Bevry Team
   - Bug: [#205: Name collisions are causing not all files to be copied](https://github.com/bevry/docpad/issues/205) ~ Bevry Team
