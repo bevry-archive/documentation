@@ -21,12 +21,12 @@ Legend:
 
 Schedule:
 - Company Operations
-  - Land consulting work or sponsorship through July and August ~ Bevry Team
+  - Land consulting work or sponsorship through July and August ~ Bevry
 - [DocPad June Batch](https://github.com/bevry/docpad/issues?milestone=10)
-  - Performance: [#216: Differential rendering](https://github.com/bevry/docpad/issues/216) ~ Bevry Team ✈
-  - Performance: [#213: Partials rendering overhead](https://github.com/bevry/docpad/issues/213) ~ Bevry Team
-  - Docs: [#226: Document the testing process](https://github.com/bevry/docpad/issues/226) ~ Bevry Team
-  - Improvement: [#123: Admin GUI](https://github.com/bevry/docpad/issues/123) ~ Bevry Team + Community  
+  - Performance: [#216: Differential rendering](https://github.com/bevry/docpad/issues/216) ~ Bevry ✈
+  - Performance: [#213: Partials rendering overhead](https://github.com/bevry/docpad/issues/213) ~ Bevry
+  - Docs: [#226: Document the testing process](https://github.com/bevry/docpad/issues/226) ~ Bevry
+  - Improvement: [#123: Admin GUI](https://github.com/bevry/docpad/issues/123) ~ Bevry + Community  
 
 If the community is working on particular task, feel free to add the task to the above list with the user handle `~ Community`
 
@@ -35,16 +35,16 @@ If the community is working on particular task, feel free to add the task to the
 
 ### May 2011
 - Company Operations
-  - Figure out a new way of organising tasks and team members (current way is stressing) ~ Bevry Team ✔
-  - Come up with email templates to use to respond to common email requests ~ Bevry Team ✔
+  - Figure out a new way of organising tasks and team members (current way is stressing) ~ Bevry ✔
+  - Come up with email templates to use to respond to common email requests ~ Bevry ✔
 - [DocPad May Batch](https://github.com/bevry/docpad/issues?milestone=9)
-  - Bug: [#208: File extensions being trimmed](https://github.com/bevry/docpad/issues/208) ~ Bevry Team ✔
-  - Bug: [#205: Name collisions are causing not all files to be copied](https://github.com/bevry/docpad/issues/205) ~ Bevry Team ✔
-  - Bug: [#220: Plugin tests are failing due to possible leak](https://github.com/bevry/docpad/issues/220) ~ Bevry Team ✔
-  - Performance: [#216: Differential rendering](https://github.com/bevry/docpad/issues/216) ~ Bevry Team ✈
+  - Bug: [#208: File extensions being trimmed](https://github.com/bevry/docpad/issues/208) ~ Bevry ✔
+  - Bug: [#205: Name collisions are causing not all files to be copied](https://github.com/bevry/docpad/issues/205) ~ Bevry ✔
+  - Bug: [#220: Plugin tests are failing due to possible leak](https://github.com/bevry/docpad/issues/220) ~ Bevry ✔
+  - Performance: [#216: Differential rendering](https://github.com/bevry/docpad/issues/216) ~ Bevry ✈
 - [Query Engine May Batch](https://github.com/bevry/query-engine/issues?milestone=1)
-  - Bug: [#11: Boolean value comparison](https://github.com/bevry/query-engine/pull/11) ~ Bevry Team  ✔
-  - Docs: [#10: Finish the Using 
+  - Bug: [#11: Boolean value comparison](https://github.com/bevry/query-engine/pull/11) ~ Bevry  ✔
+  - Docs: [#10: Finish the Using Wiki Page](https://github.com/bevry/query-engine/issues/10) ~ Bevry ✔
 
 ## Backlogs
 
