@@ -11,7 +11,7 @@ Months are split up in the following way:
 This separation of duty throughout the weeks allows the Bevry team to remain incredibly focused, without interruption, while accomplishing amazing results. Without such structure, we have found that the Bevry team members become quite stressed due to the pressures of multi-tasking and an ever-growing todo list. With this approach, stress is eliminated as it is focused on "what we **can** accomplish", rather than "what we **have** to accomplish".
 
 
-## Current Schedule (May 2011)
+## Current Schedule (June 2012)
 
 Legend:
 - ❤ items marked with a heart passed validation
@@ -21,22 +21,30 @@ Legend:
 
 Schedule:
 - Company Operations
-  - Figure out a new way of organising tasks and team members (current way is stressing) ~ Bevry Team ✈
-  - Come up with email templates to use to respond to common email requests ~ Bevry Team ✈
+  - Land consulting work or sponsorship through July and August ~ Bevry Team
+- [DocPad June Batch](https://github.com/bevry/docpad/issues?milestone=10)
+  - Performance: [#216: Differential rendering](https://github.com/bevry/docpad/issues/216) ~ Bevry Team ✈
+  - Performance: [#213: Partials rendering overhead](https://github.com/bevry/docpad/issues/213) ~ Bevry Team
+  - Docs: [#226: Document the testing process](https://github.com/bevry/docpad/issues/226) ~ Bevry Team
+  - Improvement: [#123: Admin GUI](https://github.com/bevry/docpad/issues/123) ~ Bevry Team + Community  
+
+If the community is working on particular task, feel free to add the task to the above list with the user handle `~ Community`
+
+
+## Previous Schedules
+
+### May 2011
+- Company Operations
+  - Figure out a new way of organising tasks and team members (current way is stressing) ~ Bevry Team ✔
+  - Come up with email templates to use to respond to common email requests ~ Bevry Team ✔
 - [DocPad May Batch](https://github.com/bevry/docpad/issues?milestone=9)
   - Bug: [#208: File extensions being trimmed](https://github.com/bevry/docpad/issues/208) ~ Bevry Team ✔
   - Bug: [#205: Name collisions are causing not all files to be copied](https://github.com/bevry/docpad/issues/205) ~ Bevry Team ✔
   - Bug: [#220: Plugin tests are failing due to possible leak](https://github.com/bevry/docpad/issues/220) ~ Bevry Team ✔
-  - Performance: [#216: Differential rendering](https://github.com/bevry/docpad/issues/216) ~ Bevry Team
+  - Performance: [#216: Differential rendering](https://github.com/bevry/docpad/issues/216) ~ Bevry Team ✈
 - [Query Engine May Batch](https://github.com/bevry/query-engine/issues?milestone=1)
   - Bug: [#11: Boolean value comparison](https://github.com/bevry/query-engine/pull/11) ~ Bevry Team  ✔
-  - Docs: [#10: Finish the Using Wiki Page](https://github.com/bevry/query-engine/issues/10) ~ Bevry Team ✈
-
-If the community is working on particular task, feel free to add the task to the above list with the user handle `~ Community`
-
-## Previous Schedules
-
-None yet, May is the first month we are trying this approach!
+  - Docs: [#10: Finish the Using 
 
 ## Backlogs
 
