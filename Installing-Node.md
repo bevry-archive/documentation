@@ -1,4 +1,4 @@
-This guide will run you through installing [Node.js](http://nodejs.org/) on your computer. It may look scary, but it is actually really easy and only takes a few minutes. So relax, and welcome to the world of node.
+This is the official Bevry supported guide for installing [Node.js](http://nodejs.org/) on your computer. It may look scary, but it is actually really easy and only takes a few minutes. So relax, and welcome to the world of node.
 
 ## On OSX
 
