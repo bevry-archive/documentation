@@ -69,13 +69,7 @@ This is bevry's guide for installing [Node.js](http://nodejs.org/) on your compu
 
 		``` bash
 		export node_version_to_install='v0.6.19'
-		sudo chown -R $USER /usr/local
-		curl https://github.com/joyent/node/tarball/${node_version_to_install} > node-${node_version_to_install}.tar.gz
-		tar -xf node-${node_version_to_install}.tar.gz
-		cd joyent-node-*
-		./configure && make && sudo make install && sudo chown -R $USER /usr/local
-		cd ..
-		rm -Rf node-${node_version_to_install}.tar.gz joyent-node-*
+		curl https://raw.github.com/bevry/community/master/install-node/install-node.sh | sh
 		```
 
 
@@ -86,13 +80,7 @@ This is bevry's guide for installing [Node.js](http://nodejs.org/) on your compu
 	``` bash
 	sudo apt-get update && sudo apt-get install curl build-essential openssl libssl-dev git
 	export node_version_to_install='v0.6.19'
-	sudo chown -R $USER /usr/local
-	curl https://github.com/joyent/node/tarball/${node_version_to_install} > node-${node_version_to_install}.tar.gz
-	tar -xf node-${node_version_to_install}.tar.gz
-	cd joyent-node-*
-	./configure && make && sudo make install && sudo chown -R $USER /usr/local
-	cd ..
-	rm -Rf node-${node_version_to_install}.tar.gz joyent-node-*
+	curl https://raw.github.com/bevry/community/master/install-node/install-node.sh | sh
 	```
 
 
@@ -103,13 +91,7 @@ This is bevry's guide for installing [Node.js](http://nodejs.org/) on your compu
 	``` bash
 	sudo yum -y install tcsh scons gcc-c++ glibc-devel openssl-devel git
 	export node_version_to_install='v0.6.19'
-	sudo chown -R $USER /usr/local
-	curl https://github.com/joyent/node/tarball/${node_version_to_install} > node-${node_version_to_install}.tar.gz
-	tar -xf node-${node_version_to_install}.tar.gz
-	cd joyent-node-*
-	./configure && make && sudo make install && sudo chown -R $USER /usr/local
-	cd ..
-	rm -Rf node-${node_version_to_install}.tar.gz joyent-node-*
+	curl https://raw.github.com/bevry/community/master/install-node/install-node.sh | sh
 	```
 
 
