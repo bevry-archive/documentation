@@ -125,9 +125,11 @@ Node.js has been stable on Window since version 0.6, here are the official insta
 
 
 
-## If you are installing node version 0.4, you'll also have to run the following to install npm
+## Special Notes
 
-``` bash
-sudo chown -R $USER /usr/local
-curl http://npmjs.org/install.sh | sh
-```
+- If you are installing node version 0.4, you'll also have to run the following to install npm
+
+	``` bash
+	sudo chown -R $USER /usr/local
+	curl http://npmjs.org/install.sh | sh
+	```
