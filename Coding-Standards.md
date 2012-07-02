@@ -88,10 +88,10 @@ class DocPad
 		me = @
 
 		# Log
-		console.log 'We are now constructing'
+		console.log('We are now constructing')
 
 		# Chain
-		return this
+		return @
 	
 	# Is Valid
 	isValid: ->
