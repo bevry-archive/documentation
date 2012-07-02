@@ -146,6 +146,7 @@ We utilise the following [jshint](http://www.jshint.com) [options](http://www.js
 "evil": true,
 "sub": true,
 "regexdash": true,
+"smarttabs": true,
 
 // Environments
 "browser": true,
