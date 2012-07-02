@@ -91,12 +91,12 @@ class DocPad
 		console.log('We are now constructing')
 
 		# Chain
-		return @
+		@
 	
 	# Is Valid
 	isValid: ->
 		# Return
-		return true
+		true
 
 ```
 
