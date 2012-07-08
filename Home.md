@@ -1,6 +1,6 @@
 Welcome to the Bevry public wiki :)
 
-## [Purpose](https://github.com/bevry/community/wiki/Purpose)
+## [Philosophy](https://github.com/bevry/community/wiki/Philosophy)
 The guiding principles and founding beliefs of Bevry.
 
 ## [Schedule](https://github.com/bevry/community/wiki/Schedule)
