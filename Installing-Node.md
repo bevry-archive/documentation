@@ -6,7 +6,7 @@ This is bevry's guide for installing [Node.js](http://nodejs.org/) on your compu
 
 2. ### [Download & Install Xcode](http://developer.apple.com/xcode/)
 
-	Once installed, you'll have to install the command line tools. To do this, open Xcode and go to "Preferences -> Downloads -> Command Line Tools -> Install"
+	Once installed, you'll have to install the command line tools. To do this, open Xcode and go to `Preferences -> Downloads -> Command Line Tools -> Install`
 
 	If you installed Xcode over a old non app store version, you'll want to run the follow to ensure everything is pointing to the new xcode location: `sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer`
 
@@ -55,7 +55,7 @@ This is bevry's guide for installing [Node.js](http://nodejs.org/) on your compu
 	1. Install Node.js
 
 		``` bash
-		nvm install v0.8.0
+		nvm install v0.8.1
 		nvm alias default 0.8
 		nvm use 0.8
 		```
@@ -68,7 +68,7 @@ This is bevry's guide for installing [Node.js](http://nodejs.org/) on your compu
 	1. Run the following
 
 		``` bash
-		export node_version_to_install='v0.8.0'
+		export node_version_to_install='v0.8.1'
 		curl https://raw.github.com/bevry/community/master/install-node/install-node.sh | sh
 		```
 
@@ -79,7 +79,7 @@ This is bevry's guide for installing [Node.js](http://nodejs.org/) on your compu
 
 	``` bash
 	sudo apt-get update && sudo apt-get install curl build-essential openssl libssl-dev git
-	export node_version_to_install='v0.8.0'
+	export node_version_to_install='v0.8.1'
 	curl https://raw.github.com/bevry/community/master/install-node/install-node.sh | sh
 	```
 
@@ -90,7 +90,7 @@ This is bevry's guide for installing [Node.js](http://nodejs.org/) on your compu
 
 	``` bash
 	sudo yum -y install tcsh scons gcc-c++ glibc-devel openssl-devel git
-	export node_version_to_install='v0.8.0'
+	export node_version_to_install='v0.8.1'
 	curl https://raw.github.com/bevry/community/master/install-node/install-node.sh | sh
 	```
 
