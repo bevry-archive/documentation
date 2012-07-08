@@ -1,5 +1,8 @@
 Welcome to the Bevry public wiki :)
 
+## [Purpose](https://github.com/bevry/community/wiki/Purpose)
+The guiding principles and founding beliefs of Bevry.
+
 ## [Schedule](https://github.com/bevry/community/wiki/Schedule)
 The schedule details our current plans month to month for each our projects and the company in general.
 
