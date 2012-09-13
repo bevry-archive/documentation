@@ -4,4 +4,4 @@ Supported support channels are:
 - StackOverflow for programming related questions seeking answers. You must use the tag for the product you are wanting support for. Support products are DocPad (tag `docpad`) and History.js (tag `history.js`).
 - Email via support@bevry.me
 
-Premium support can be purchased by emailing support@bevry.me. Current price is $50AUD per month per person (inc. tax).
+Premium support can be purchased by emailing support@bevry.me
