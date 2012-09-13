@@ -2,6 +2,6 @@ Premium support provides you with support response times within one day when goi
 
 Supported support channels are:
 - StackOverflow for programming related questions seeking answers. You must use the tag for the product you are wanting support for. Support products are DocPad (tag `docpad`) and History.js (tag `history.js`).
-- Email via support@bevry.me
+- Email via support@docpad.org for DocPad, support@historyjs.net for History.js and support@bevry.me for anything else.
 
 Premium support can be purchased by emailing support@bevry.me.
