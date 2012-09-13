@@ -55,7 +55,7 @@ This is bevry's guide for installing [Node.js](http://nodejs.org/) on your compu
 	1. Install Node.js
 
 		``` bash
-		nvm install v0.8.1
+		nvm install v0.8.9
 		nvm alias default 0.8
 		nvm use 0.8
 		```
@@ -68,7 +68,7 @@ This is bevry's guide for installing [Node.js](http://nodejs.org/) on your compu
 	1. Run the following
 
 		``` bash
-		export node_version_to_install='v0.8.1'
+		export node_version_to_install='v0.8.9'
 		curl https://raw.github.com/bevry/community/master/install-node/install-node.sh | sh
 		```
 
@@ -79,7 +79,7 @@ This is bevry's guide for installing [Node.js](http://nodejs.org/) on your compu
 
 	``` bash
 	sudo apt-get update && sudo apt-get install curl build-essential openssl libssl-dev git python
-	export node_version_to_install='v0.8.1'
+	export node_version_to_install='v0.8.9'
 	curl https://raw.github.com/bevry/community/master/install-node/install-node.sh | sh
 	```
 
@@ -90,7 +90,7 @@ This is bevry's guide for installing [Node.js](http://nodejs.org/) on your compu
 
 	``` bash
 	sudo yum -y install tcsh scons gcc-c++ glibc-devel openssl-devel git python
-	export node_version_to_install='v0.8.1'
+	export node_version_to_install='v0.8.9'
 	curl https://raw.github.com/bevry/community/master/install-node/install-node.sh | sh
 	```
 
