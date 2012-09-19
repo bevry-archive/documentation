@@ -106,13 +106,13 @@ class DocPad
 
 ### Parenthesis
 
-When to use parenthesis:
+Use parenthesis as much as possible, especially when:
 
 - when the function call only accepts a few arguments, e.g. `complete(err)`
 - when the function call is before another statement, e.g. `return fatal(err)  if err`
 - when the function call utilises the `?` operator, e.g. `next?(err)`
 
-When not to use parenthesis:
+Occasionally it is okay to not use them, such instances where it beneficial not use parenthesis are:
 
 - when the function call utilises a single inline callback, which is the last argument, e.g. `path.exists __filename, (exists) ->`
 - when the function call accepts unlimited arguments, e.g. `console.log "Hello"`
