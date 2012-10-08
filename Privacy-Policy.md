@@ -20,7 +20,7 @@ With those events, we send the following information:
 - names of the docpad plugins that are enabled
 	- so we can understand which plugins should get attention and which shouldn't
 - website's package.json name
-	- so we can understand how many websites you are using docpad against
+	- so we can understand how many websites docpad is powering
 - operating system architecture (e.g. "darwin" for OSX, "win" for Windows)
 	- so we can better cater towards different platforms
 
