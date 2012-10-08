@@ -3,15 +3,15 @@
 DocPad will send the following information back to Bevry (the company that makes Bevry) so that we can better understand how people are using DocPad, and consequently, make it better because of this.
 
 We track the following events:
-- an action is performed (e.g. run, server, etc)
+- when an action is performed (e.g. run, server, etc)
 	- so we know how people are using DocPad, so we can focus on the areas that are actually used
-- you are asked which skeleton you would like
+- when you are asked which skeleton you would like
 	- so we know how many users quit or follow through
-- you have chosen a skeleton
+- when you have chosen a skeleton
 	- so we can put more resources into more popular skeletons
 
 With those events, we send the following information:
-- your username if set
+- username if set
 	- so we can learn about user retention and identify problem areas
 - docpad version
 	- so we know how upgrading is going
