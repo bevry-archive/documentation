@@ -1,6 +1,6 @@
 ## DocPad Application
 
-DocPad will send the following information back to Bevry (the company that makes Bevry) so that we can better understand how people are using DocPad, and consequently, make it better because of this.
+DocPad will send the following information back to Bevry (the company that makes DocPad) so that we can better understand how people are using DocPad, and consequently, make it better because of this.
 
 We track the following events:
 - when an action is performed (e.g. run, server, etc)
@@ -29,8 +29,12 @@ We also store the following information about yourself:
 - name if set
 - username if set
 - country code
+	- so we can understand growth areas and market accordingly
 - language code
+	- so we can know what translations to prioritise
 - last login
+	- so we can understand retention and usage
 - first login
+	- so we can understand effectiveness of marketing
 
 If you would like more information, or have any feedback. Please email privacy@bevry.me
