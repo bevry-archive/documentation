@@ -30,7 +30,7 @@ Customers may access their Bevry account data via an API (Application Program In
 1. All paid plans must enter a valid credit card. Free accounts are not required to provide a credit card number.
 1. An upgrade from the free plan to any paying plan will immediately bill you.
 1. The Service is billed in advance on a monthly basis and is non-refundable. There will be no refunds or credits for partial months of service, upgrade/downgrade refunds, or refunds for months unused with an open account. In order to treat everyone equally, no exceptions will be made.
-1. All fees are exclusive of all taxes, levies, or duties imposed by taxing authorities, and you shall be responsible for payment of all such taxes, levies, or duties, excluding only United States (federal or state) taxes.
+1. All fees are exclusive of all taxes, levies, or duties imposed by taxing authorities, and you shall be responsible for payment of all such taxes, levies, or duties.
 1. For any upgrade or downgrade in plan level, your credit card that you provided will automatically be charged the new rate on your next billing cycle.
 1. Downgrading your Service may cause the loss of Content, features, or capacity of your Account. Bevry does not accept any liability for such loss.
 
