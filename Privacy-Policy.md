@@ -48,7 +48,7 @@ With those events, we send the following information:
 	- so we know how upgrading is going
 - docpad environment
 	- so we know whether people mainly run docpad in dev or production
-- names of the docpad plugins that are enabled
+- names and versions of enabled plugins
 	- so we can understand which plugins should get attention and which shouldn't
 - website's package.json name
 	- so we can understand how many websites docpad is powering
