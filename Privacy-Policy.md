@@ -26,7 +26,7 @@ When you register a Bevry account, we will store the following information:
 
 ### Bevry Web Sites
 
-When you use a web site created by Bevry, we will gather statistics about your usage of the web site. This information is not collected by us, but 3rd party analytic companies such as [Google Analytics](http://www.google.com/analytics/).
+When you use a web site created by Bevry, we will gather statistics about your usage of the web site. This information is not logged through us, but 3rd party analytic companies such as [Google Analytics](http://www.google.com/analytics/).
 
 
 ### DocPad Application
@@ -54,6 +54,8 @@ With those events, we send the following information:
 	- so we can understand how many websites docpad is powering
 - operating system architecture (e.g. "darwin" for OSX, "win" for Windows)
 	- so we can better cater towards different platforms
+
+This information is not logged through us, but 3rd party reporting companies such as [Mixpanel](https://mixpanel.com/) and [Airbrake](https://airbrake.io).
 
 ## Cookies
 
