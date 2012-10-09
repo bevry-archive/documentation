@@ -13,6 +13,7 @@ When you register a Bevry account, we will store the following information:
 - email if set
 - name if set
 - username if set
+- whether you are subscribed to our newsletter
 - country code
 	- so we can understand growth areas and market accordingly
 - language code
