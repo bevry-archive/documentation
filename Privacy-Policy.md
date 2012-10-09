@@ -50,6 +50,11 @@ With those events, we send the following information:
 - operating system architecture (e.g. "darwin" for OSX, "win" for Windows)
 	- so we can better cater towards different platforms
 
+## Cookies
+
+- A cookie is a small amount of data, which often includes an anonymous unique identifier, that is sent to your browser from a web site's computers and stored on your computer's hard drive.
+- Cookies are required to use the Bevry service.
+- We use cookies to record current session information, but do not use permanent cookies. You are required to re-login to your Bevry account after a certain period of time has elapsed to protect you against others accidentally accessing your account contents.
 
 ## Data Storage
 
