@@ -73,6 +73,6 @@ Bevry may disclose personally identifiable information under special circumstanc
 
 Bevry may periodically update this policy. We will notify you about significant changes in the way we treat personal information by sending a notice to the primary email address specified in your Bevry primary account holder account or by placing a prominent notice on our site.
 
-## Feedback
+## Questions
 
-If you would like more information, or have any feedback. Please email support@bevry.me
+Questions about the Privacy Policy should be sent to support@bevry.me
