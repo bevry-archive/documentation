@@ -26,7 +26,7 @@ When you register a Bevry account, we will store the following information:
 
 ### Bevry Websites
 
-When you use a website created by Bevry, we will gather statistics about your usage of the website. This information is not collected by us, but 3rd party analytic companies such as [Google Analytics](http://www.google.com/analytics/).
+When you use a web site created by Bevry, we will gather statistics about your usage of the web site. This information is not collected by us, but 3rd party analytic companies such as [Google Analytics](http://www.google.com/analytics/).
 
 
 ### DocPad Application
