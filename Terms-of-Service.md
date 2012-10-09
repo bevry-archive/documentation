@@ -4,7 +4,7 @@ Bevry reserves the right to update and change the Terms of Service from time to 
 
 Violation of any of the terms below will result in the termination of your Account. While Bevry prohibits such conduct and Content on the Service, you understand and agree that Bevry cannot be responsible for the Content posted on the Service and you nonetheless may be exposed to such materials. You agree to use the Service at your own risk.
 
-## Account Terms
+## A. Account Terms
 
 1. You must be 13 years or older to use this Service.
 1. You must be a human. Accounts registered by "bots" or other automated methods are not permitted.
