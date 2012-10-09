@@ -24,7 +24,7 @@ When you register a Bevry account, we will store the following information:
 	- so we can understand effectiveness of marketing
 
 
-### Bevry Websites
+### Bevry Web Sites
 
 When you use a web site created by Bevry, we will gather statistics about your usage of the web site. This information is not collected by us, but 3rd party analytic companies such as [Google Analytics](http://www.google.com/analytics/).
 
