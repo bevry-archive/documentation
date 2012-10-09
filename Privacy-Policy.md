@@ -1,14 +1,39 @@
-## DocPad Application
+## General Information
 
-DocPad will send the following information back to Bevry (the company that makes DocPad) so that we can better understand how people are using DocPad, and consequently, make it better because of this.
+We collect the e-mail addresses of those who communicate with us via e-mail, aggregate information on what pages consumers access or visit, and information volunteered by the consumer (such as survey information and/or site registrations). The information we collect is used to improve the content of our Web pages and the quality of our service, and is not shared with or sold to other organizations for commercial purposes, except to provide products or services you've requested, when we have your permission, or under the following circumstances:
 
-We track the following events:
+- It is necessary to share information in order to investigate, prevent, or take action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any person, violations of Terms of Service, or as otherwise required by law.
+- We transfer information about you if Bevry is acquired by or merged with another company. In this event, Bevry will notify you before information about you is transferred and becomes subject to a different privacy policy.
+
+## Information Gathering and Usage
+
+### Bevry Account
+
+When you register a Bevry account, we will store the following information:
+- email if set
+- name if set
+- username if set
+- country code
+	- so we can understand growth areas and market accordingly
+- language code
+	- so we can know what translations to prioritise
+- last login
+	- so we can understand retention and usage
+- first login
+	- so we can understand effectiveness of marketing
+
+
+### DocPad Application
+
+When you use the DocPad application, we will track the following events:
 - when an action is performed (e.g. run, server, etc)
 	- so we know how people are using DocPad, so we can focus on the areas that are actually used
 - when you are asked which skeleton you would like
 	- so we know how many users quit or follow through
 - when you have chosen a skeleton
 	- so we can put more resources into more popular skeletons
+- when an error occurs
+	- so we can fix it quickly
 
 With those events, we send the following information:
 - username if set
@@ -24,17 +49,19 @@ With those events, we send the following information:
 - operating system architecture (e.g. "darwin" for OSX, "win" for Windows)
 	- so we can better cater towards different platforms
 
-We also store the following information about yourself:
-- email if set
-- name if set
-- username if set
-- country code
-	- so we can understand growth areas and market accordingly
-- language code
-	- so we can know what translations to prioritise
-- last login
-	- so we can understand retention and usage
-- first login
-	- so we can understand effectiveness of marketing
+
+## Data Storage
+
+Bevry uses third party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run Bevry. Although Bevry owns the code, databases, and all rights to the Bevry application, you retain all rights to your data.
+
+## Disclosure
+
+Bevry may disclose personally identifiable information under special circumstances, such as to comply with subpoenas.
+
+## Changes
+
+Bevry may periodically update this policy. We will notify you about significant changes in the way we treat personal information by sending a notice to the primary email address specified in your Bevry primary account holder account or by placing a prominent notice on our site.
+
+## Feedback
 
 If you would like more information, or have any feedback. Please email privacy@bevry.me
