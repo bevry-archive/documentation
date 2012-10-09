@@ -7,6 +7,11 @@ We collect the e-mail addresses of those who communicate with us via e-mail, agg
 
 ## Information Gathering and Usage
 
+### Bevry Web Sites
+
+When you use a web site created by Bevry, we will gather statistics about your usage of the web site. This information is not logged through us, but 3rd party analytic companies such as [Google Analytics](http://www.google.com/analytics/).
+
+
 ### Bevry Account
 
 When you register a Bevry account, we will store the following information:
@@ -22,11 +27,6 @@ When you register a Bevry account, we will store the following information:
 	- so we can understand retention and usage
 - first login
 	- so we can understand effectiveness of marketing
-
-
-### Bevry Web Sites
-
-When you use a web site created by Bevry, we will gather statistics about your usage of the web site. This information is not logged through us, but 3rd party analytic companies such as [Google Analytics](http://www.google.com/analytics/).
 
 
 ### DocPad Application
