@@ -57,6 +57,7 @@ Customers may access their Bevry account data via an API (Application Program In
 ## G. Hosting Conditions
 
 Use of the Bevry hosting service, is bound by these Terms of Service plus the following specific terms:
+
 1. You may use Bevry subdomains (e.g., subdomain.bevry.me) solely as permitted and intended by the Bevry Pages tool to host your company pages, personal pages, or open source project pages, and for no other purpose. You may not use Bevry subdomains in violation of Bevry's trademark or other rights or in violation of applicable law. Bevry reserves the right at all times to reclaim any Bevry subdomain without liability to you.
 1. If your bandwidth usage significantly exceeds the average bandwidth usage (as determined solely by Bevry) of other Bevry customers, we reserve the right to immediately disable your account or throttle your file hosting until you can reduce your bandwidth consumption.
 
