@@ -15,9 +15,6 @@ Links inside the documentation may look like `/project/page` which within GitHub
 ## Maintainers
 
 - [Benjamin Lupton](http://balupton) - [@balupton](https://github.com/balupton)
-- [Eduán Lávaque](http://eduantech.com) - [@Greduan](https://github.com/Greduan)
-- Paul Dowsett - [@hal-gh](https://github.com/hal-gh)
-- Tony - [@Zearin](https://github.com/Zearin)
 
 
 ## License
