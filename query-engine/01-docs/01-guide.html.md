@@ -1,8 +1,7 @@
 ---
 title: "Using Query Engine"
 ---
-
-This wiki page will go into detail about the usage of the QueryEngine API.
+This wiki page will go into detail about the usage of the [QueryEngine](https://github.com/bevry/query-engine) API.
 
 ## Introduction
 QueryEngine is incredibly powerful, and pretty easy to use once you understand the key concepts behind it which we'll detail here. Firstly, there is the `QueryCollection` class which extends the Backbone Collection functionality with our special sauce. QueryCollections can be in one of two states, standard or live. QueryEngine also provides a few different ways of _querying_ our collections to discover the models that pass our selection _criteria_. QueryEngine supports the following types of selection criteria: Queries, Filters, Pills and SearchStrings all serving their own purpose.
@@ -10,7 +9,7 @@ QueryEngine is incredibly powerful, and pretty easy to use once you understand t
 ### Collection Types
 **Standard collections** behave very traditionally, in the sense that you have a collection that contains all your models, and you want to check every single one of them against a particular criteria, and return the models which passed the criteria. While being the most straightforward, it is also vastly inefficient, as every single time we query, we have to scan all the models all over again. It also has the problem that if one of our passed models changes, and no longer matches our criteria, we wouldn't care. These down-sides make it very hard to code real-time auto-updating dynamic applications.
 
-**Live collections** step in where standard collections fall short. Live collections listen to the [Collections Events](http://documentcloud.github.com/backbone/#Collection "Collection Events are provided by Backbone") to automatically check that the added, changed or removed model matches our criteria, if it does, then it will add or keep it, if it doesn't it will remove it. This is magical and highly efficient, as it means that our Live collections are always up to date with the correct models, and adding and removing models happens automatically in the most efficient way possible. Instead of querying our entire collection's models every time we want results, it only performs the queries for each model once, and then again when an event fires.
+**Live collections** step in where standard collections fall short. Live collections listen to the [Collections Events](http://documentcloud.github.com/backbone/#Collection "Collection Events are provided by Backbone") to automatically check that the added, changed or removed model matches our criteria, if it does, then it will add or keep it, if it doesn't it will remove it. This is magical and highly efficient, as it means that our Live collections are always up to date with the correct models, and adding and removing models happens automatically in the most efficient way possible. Instead of querying our entire collection's models every time we want results, it only performs the queries for each model once, and then again when an event fires. 
 
 ### Collection Hierarchy
 **Standard collections** do not having any collection hierarchy, and all models inside the standard collection are their own. If they are a live collection, then they only subscribe to their own events.
