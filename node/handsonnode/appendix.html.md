@@ -38,15 +38,15 @@ Liked this training? Sign up to the newsletter to be notified of more like it:
 ### Recommended Modules
 
 - Async
-	- [async](https://github.com/caolan/async)
-	- [bal-util](https://github.com/balupton/bal-util)
+	- [TaskGroup](https://github.com/bevry/taskgroup)
+	- [Async.js](https://github.com/caolan/async)
 
 - Testing
 	- [Joe](https://github.com/bevry/joe)
 	- [Chai](http://chaijs.com/)
 
 - Querying
-	- [Query Engine](https://github.com/bevry/query-engine/)
+	- [QueryEngine](https://github.com/bevry/query-engine/)
 
 - Templating
 	- [DocPad](http://docpad.org)
@@ -61,14 +61,17 @@ Liked this training? Sign up to the newsletter to be notified of more like it:
 
 - Configuration Files
 	- [CSON](https://github.com/bevry/cson)
-	- [yaml.js](https://github.com/jeremyfa/yaml.js)
+	- [YAML.js](https://github.com/jeremyfa/yaml.js)
 
 - Utilities
-	- [underscore](http://underscorejs.org/)
-	- [bal-util](https://github.com/balupton/bal-util)
-	- [watchr](https://github.com/bevry/watchr)
-	- [request](https://github.com/mikeal/request)
+	- [Underscore](http://underscorejs.org/)
+	- [SafePS](https://github.com/bevry/safeps)
+	- [SafeFS](https://github.com/bevry/safefs)
+	- [Eachr](https://github.com/bevry/eachr)
+	- [Extendr](https://github.com/bevry/extendr)
+	- [Watchr](https://github.com/bevry/watchr)
+	- [Request](https://github.com/mikeal/request)
 
 - CLI
-	- [caterpillar](https://github.com/bevry/caterpillar)
-	- [commander.js](https://github.com/visionmedia/commander.js/)
+	- [Caterpillar](https://github.com/bevry/caterpillar)
+	- [Commander.js](https://github.com/visionmedia/commander.js/)
