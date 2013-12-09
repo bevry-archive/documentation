@@ -52,14 +52,16 @@ Utilising of the JavaDoc format is decided per-project.
 
 #### Sections
 
-<pre># =====================================
+```
+# =====================================
 # Main Section
 
 # -------------------------------------
 # Sub Section
 
 # Group
-...</pre>
+...
+```
 
 Sections are used to indicate when the context of the code has changed, for instance grouping of particular functions or logic. Sections have two main advantages, they increase the speed of noticing and understanding context changes, as well as increasing the speed of cognition - without having to actually read any code.
 
