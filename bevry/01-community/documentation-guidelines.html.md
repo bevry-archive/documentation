@@ -1,7 +1,3 @@
-```
-ignored: true
-```
-
 All pull requests must conform to the following criteria in order to get merged in:
 
 - ### GitHub Flavoured Markdown
