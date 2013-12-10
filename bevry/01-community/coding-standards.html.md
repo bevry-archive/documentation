@@ -7,7 +7,35 @@ USA English should be used within your code. This is because the majority of mod
 
 ### Indentation
 
-Tabs should be used for indentation. This allows everyone who uses your code to view it with their ideal indentation size.
+Tabs should be used for indentation. This is because:
+
+1. Tabs allow _everyone_ who uses your code to view it with their ideal indentation size
+2. Tabs help prevent incorrect indentation, that can cause unsightly code, as well as errors in indentation based languages (a missing space is very difficult to notice)
+
+
+### Column Alignment
+
+Spaces (not tabs) should be used for column alignment. This is because:
+
+1. Tabs can be displayed at different sizes based on the users configuration, meaning that for different users columns could be misaligned.
+2. Spaces will always be displayed the same.
+
+For when to use (or mot use) column alignment, refer to the following table:
+
+<table>
+<tr><th>No Column Alignment</th><th>With Column Alignment</th></tr>
+<tr><td><pre>one: 1
+two: 2
+three: 3
+</pre></td><td><pre>one:    1
+two:    2
+three:  3
+</pre></tr>
+<tr>
+<td>Best for when faster reading/cognition of row-by-row data is desired. Within code this is generally the vast majority of cases: e.g. key-value-pairs.</td>
+<td>Best for when faster reading/cognition of column-by-column is desired. Within text this is generally the vast majority of cases: e.g. presenting table data. Align using spaces.</td>
+</tr>
+</table>
 
 
 ### Naming Convention
@@ -24,23 +52,6 @@ jsonHandler = new JSONHandler()
 jsonHandler.toJSON()
 ```
 
-
-### Column Alignment
-
-<table>
-<tr><th>No Column Alignment</th><th>With Column Alignment</th></tr>
-<tr><td><pre>one: 1
-two: 2
-three: 3
-</pre></td><td><pre>one:    1
-two:    2
-three:  3
-</pre></tr>
-<tr>
-<td>Best for when faster reading/cognition of row-by-row data is desired. Within code this is generally the vast majority of cases: e.g. key-value-pairs.</td>
-<td>Best for when faster reading/cognition of column-by-column is desired. Within text this is generally the vast majority of cases: e.g. presenting table data. Align using spaces.</td>
-</tr>
-</table>
 
 
 ### Code Structure & Commenting
