@@ -40,9 +40,8 @@ three:  3
 
 ### Naming Convention
 
-Class names should be CamelCase, while everything else should be camelCase. Acronyms should be treated specially, see example.
+Class names should be CamelCase, while everything else should be camelCase. Acronyms should be treated specially.
 
-Example:
 
 ``` coffeescript
 class JSONHandler
