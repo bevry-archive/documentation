@@ -1,6 +1,6 @@
 Use these guidelines for when you are providing support or offering help for Bevry products.
 
-All of these guidelines mainly cocentrate on one goal, which is to be as nice *as possible*. This is mainly because a lot of feeling is lost in text and it can be taken very in a very bad way.
+All of these guidelines mainly cocentrate on one goal, which is to be as nice *as possible*. This is mainly because a lot of feeling is lost in text and it can be taken in a very bad way.
 
 A simple example is the following sentence "You're sick!", it's just an example but the person that wrote it meant it in a good way, however the person on the other end can take it *very* badly if he doesn't know well enough to know you use the word "sick" in a good way on a daily basis. So just keep that in mind.
 
@@ -41,9 +41,9 @@ And it is about letting the user know you care. This is a very simple step to ta
 ### Summary
 
 1. Sorry!
-2. Empathize/sympathize
-3. Explain what went wrong (not what they did wrong)
-4. Provide a suggestion of what to do
-5. Leave on something positive
+1. Empathize/sympathize
+1. Explain what went wrong (not what they did wrong)
+1. Provide a suggestion of what to do
+1. Leave on something positive
   1. Reinforce how these steps will help them
-  2. Reinforce you care
+  1. Reinforce you care
