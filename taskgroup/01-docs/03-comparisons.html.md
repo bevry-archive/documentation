@@ -70,3 +70,7 @@ Another big advantage of TaskGroup over async.js is TaskGroup's ability to add t
 
 A final big advantage of TaskGroup over async.js is TaskGroup's ability to do nested groups, this allowed us to created the [Joe Testing Framework & Runner](https://github.com/bevry/joe) incredibly easily, and because of this functionality Joe will always know which test (task) is associated to which suite (task group), whereas test runners like mocha have to guess (they add the task to the last group, which may not always be the case! especially with dynamically created tests!).
 
+
+### Promises
+
+It would be great if we had a guide here for comparing TaskGroup to promise based solutions. If you want to take the reigns of implementing this one, [edit this document now!](https://github.com/bevry/documentation/edit/master/taskgroup/01-docs/03-comparisons.html.md)
