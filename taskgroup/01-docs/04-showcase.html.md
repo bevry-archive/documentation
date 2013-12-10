@@ -1,5 +1,5 @@
 ---
-title: "Projects that use TaskGroup"
+title: "Projects using TaskGroup"
 ---
 
 
