@@ -173,9 +173,9 @@ We utilise the following [jshint](http://www.jshint.com) [options](http://www.js
 
 Bevry only publishes modules to the npm registry, avoiding the component and bower package managers altogether.
 
-The reasoning for this is that we use to publish to the package managers component and bower, and include support for the module loaders AMD, Require.js, and None — but it just become too much to manage and deal with.
+The reasoning for this is that we use to publish to the package managers component and bower, and include support for the module loaders AMD, Require.js, and Global Namespacing (aka none) — but it just become too much to manage and deal with.
 
-The package managers Component and Bower both use git repositories as their registry, meaning that you must bundle the production distribution of your packge with your source files in your git repository. This makes your git repository get quite large, and pollutes the change histories often. Neither of which, have any stance on which module loader you should use, creating extra complexity.
+The package managers Component and Bower both use git repositories as their registry, meaning that you must bundle the production distribution of your packge with your source files in your git repository. This makes your git repository get quite large, and pollutes the change history. Neither of these package managers, have any stance on which module loader you should use, creating extra complexity.
 
 The module loaders AMD, Require.js, and Global Namespacing (aka none), require you to use a [UMD style header definition](https://github.com/docpad/docpad-plugin-umd#usage) in your projects pre-distribution. They also require an impratical amount of tests to be written ensuring your library loads against each one, or you don't write tests, and you get error reports on how it doesn't work under one of the environments you don't use, you push a fix, and it breaks another environment you don't use.
 
