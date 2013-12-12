@@ -169,6 +169,21 @@ We utilise the following [jshint](http://www.jshint.com) [options](http://www.js
 ```
 
 
+## Semantic Versioning
+
+Bevry abides by [semantic versioning principles](http://semver.org/), that is to say:
+
+- Major releases `v1`, contain breaking changes for everyone
+- Minor releases `v1.1`, contain breaking changes for some people
+- Patch releases `v1.1.1`, contain no breaking changes
+
+When specifying dependencies, we will use the `~` operator at the start of the version number, like so `~1.3.2` which will allow versions after `1.3.2` but before `1.4.0`.
+
+The reasoning why we only allow patch releases to automatically be installed, is that anything else could mean that when a re-install of our project happens, things could be broken. This could happen when doing a production deploy, a new person installs your project, or simply when you come back to you project after a while of inactivity.
+
+We use to allow minor releases to be installed automatically, but the amount of breaks they caused from the situations above was too much, hence this standard of practice being put in place.
+
+
 ## Package Managers & Module Loaders
 
 Bevry only publishes modules to the npm registry, avoiding the component and bower package managers altogether.
