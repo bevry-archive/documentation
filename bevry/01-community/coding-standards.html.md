@@ -167,3 +167,24 @@ We utilise the following [jshint](http://www.jshint.com) [options](http://www.js
 // Legacy
 "onevar": false
 ```
+
+
+## Package Managers & Module Loaders
+
+Bevry only publishes modules to the npm registry, avoiding the component and bower package managers altogether.
+
+The reasoning for this is that we use to publish to the package managers component and bower, and include support for the module loaders AMD, Require.js, and None — but it just become too much to manage and deal with.
+
+The package managers Component and Bower both use git repositories as their registry, meaning that you must bundle the production distribution of your packge with your source files in your git repository. This makes your git repository get quite large, and pollutes the change histories often. Neither of which, have any stance on which module loader you should use, creating extra complexity.
+
+The module loaders AMD, Require.js, and Global Namespacing (aka none), require you to use a [UMD style header definition](https://github.com/docpad/docpad-plugin-umd#usage) in your projects pre-distribution. They also require an impratical amount of tests to be written ensuring your library loads against each one, or you don't write tests, and you get error reports on how it doesn't work under one of the environments you don't use, you push a fix, and it breaks another environment you don't use.
+
+With the commonjs, npm, browserify, and ender solution. You publish only your production files to the npm registry, not your source files. This has the benefit of not polluting your repository's size and changelogs with production files, but it also means even if GitHub goes down (which happens a bit), you can still install things.
+
+NPM + Browserify offer a lot of control over your packages, and you can even [add UMD headers to them at compile time](http://dontkry.com/posts/code/browserify-and-the-universal-module-definition.html) if you must insist, however UMD misses out on the amazing benefit of the beautiful simplicitly of commonjs. Importing a module is as easy as `require('module-name')` and you never have to worry about version conflicts either (something that component users do have to worry about).
+
+Ender also makes it easy for people who don't need the control (and complexity) of the npm + browserify solution to easily be able to bundle and add libraries together into a production ready build file.
+
+But for those who want the ultimate simplicitly, tools like [wzrd.in](http://wzrd.in) and [requirebin](http://requirebin.com/) allow you to easily just create CDN ready distros of commonjs npm published modules right away, for instant inclusion in your application. Awesome.
+
+So for all those reasons, we feel the commonjs utilitly belt of npm, browserify, ender, wzrd.in and requirebin, is the ultimate solution. Whereas solutions like AMD, Require.js, bower and component, just cause headaches.
