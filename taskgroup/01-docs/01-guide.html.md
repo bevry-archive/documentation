@@ -277,6 +277,25 @@ tasks.run();
 Now even though the first task's completion callback still fires, it is sucessfully ignored, as the TaskGroup has exited.
 
 
+### Notes
+
+A common mistake for people coming from the complex land of promises, is that they may make code like this:
+
+```
+// Execute the task
+task.run();
+
+// Add our completion callback for once the task has completed
+task.once('complete', function(err, result){
+	// Do something now that the task has completed ...
+	console.log([err, result]);
+	/* [null, "a sychronous result"] */
+});
+```
+
+Expecting the completion callback to fire right away. However, as the TaskGroup is just an event emitter, the completion listener is only fired at the point in time when the `complete` event is emitted. As such, you should always add your completion listener before you run your task or taskgroup, never after.
+
+
 ### Graduation
 
 Now you know all the essentials to getting started with coding the most amazing (a)synchronous parallel/serial code in your life. Enjoy!
