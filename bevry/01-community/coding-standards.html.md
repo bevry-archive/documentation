@@ -57,7 +57,7 @@ jsonHandler.toJSON()
 
 #### JavaDoc Format
 
-Utilising of the JavaDoc format is decided per-project.
+Utilization of the JavaDoc format is decided per-project.
 
 
 #### Sections
