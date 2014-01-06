@@ -1,4 +1,4 @@
-All pull requests must conform to the following criteria in order to get merged in:
+Pull requests must conform to the following criteria:
 
 - ### GitHub Flavoured Markdown
 	We use [GitHub Flavoured Markdown](http://github.github.com/github-flavored-markdown/) for all our documents.
