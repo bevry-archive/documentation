@@ -75,7 +75,7 @@ Utilising of the JavaDoc format is decided per-project.
 
 Sections are used to indicate when the context of the code has changed, for instance grouping of particular functions or logic. Sections have two main advantages, they increase the speed of noticing and understanding context changes, as well as increasing the speed of cognition - without having to actually read any code.
 
-The main sections and sub sections utilise a horiztonal rule. The last part of the horiztonal rule should always lay on the 40th column. The headings should be concise (only a few words max)
+The main sections and sub sections utilise a horizontal rule. The last part of the horiztonal rule should always lay on the 40th column. The headings should be concise (only a few words max)
 
 Example:
 
