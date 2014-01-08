@@ -26,11 +26,10 @@ For when to use (or mot use) column alignment, refer to the following table:
 <tr><th>No Column Alignment</th><th>With Column Alignment</th></tr>
 <tr><td><pre>one: 1
 two: 2
-three: 3
-</pre></td><td><pre>one:    1
+three: 3</pre></td>
+<td><pre>one:    1
 two:    2
-three:  3
-</pre></tr>
+three:  3</pre></tr>
 <tr>
 <td>Best for when faster reading/cognition of row-by-row data is desired. Within code this is generally the vast majority of cases: e.g. key-value-pairs.</td>
 <td>Best for when faster reading/cognition of column-by-column is desired. Within text this is generally the vast majority of cases: e.g. presenting table data. Align using spaces.</td>
