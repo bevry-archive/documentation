@@ -7,7 +7,7 @@ Pull requests must conform to the following criteria:
 	Each pull request should only alter one paragraph.  This makes the process of merging the change simple.
 
 - ### International/British English for Text, USA/American English for Code
-	We love it when people fix spelling errors and typos! We use International/British English for text (only 27% of our visitors are from the USA), and USA/American English for code. Code examples should (where it makes sense to) comply with the [Bevry Coding Standards](http://bevry.me/bevry/coding-standards).
+	We love it when people fix spelling errors and typos! We use International/British English for text (only 27% of our visitors are from the USA), and USA/American English for code. Code examples should (where it makes sense to) comply with the [Bevry Coding Standards](http://bevry.me/bevry/coding-standards). If you do not know what the differences are, no worries, still submit your pull request and we'll merge it in and fix it up after if needed.
 
 - ### Explain changes
 	Fixing grammar as well any other sentence restructuring will require a description along with the pull request on why this change is better than the original. It turns out that such changes are largely subjective, and that the original may be that way for sound reasons.
