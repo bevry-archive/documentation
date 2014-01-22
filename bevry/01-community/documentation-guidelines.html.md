@@ -10,7 +10,7 @@ Pull requests must conform to the following criteria:
 	We love it when people fix spelling errors and typos! We use International/British English for text (only 27% of our visitors are from the USA), and USA/American English for code. Code examples should (where it makes sense to) comply with the [Bevry Coding Standards](http://bevry.me/bevry/coding-standards). If you do not know what the differences are, no worries, still submit your pull request and we'll merge it in and fix it up after if needed.
 
 - ### Explain changes
-	Fixing grammar as well any other sentence restructuring will require a description along with the pull request on why this change is better than the original. It turns out that such changes are largely subjective, and that the original may be that way for sound reasons.
+	Please provide brief notes on the benefit of the change.
 
 - ### No external documentation supplements yet
 	We are not yet ready to add resources to community documentation and videos yet. We need to figure out the best way to present the data while avoiding common pitfalls like out of sync or conflicting documentation.
