@@ -34,7 +34,7 @@ Doing this it achieves our goals. But given a year or so development, that would
 1. Creating a new file called `handle-files.js`
 2. Put our `handleFiles` function inside it
 3. End the file with `module.exports = handleFiles;`
-4. Require the function in our server file by doing `var handleFilers = require('handle-files.js');`
+4. Require the function in our server file by doing `var handleFiles = require('handle-files.js');`
 
 [You can read more about modules via node's documentation on it.](http://nodejs.org/docs/latest/api/modules.html)
 
