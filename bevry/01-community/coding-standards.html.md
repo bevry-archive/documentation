@@ -138,7 +138,7 @@ Each function should have an explicit return, if it doesn't then make it chain. 
 
 ### JSHint Options
 
-We utilise the following [jshint](http://www.jshint.com) [options](http://www.jshint.com/options/):
+We utilise the following [jshint](http://www.jshint.com) [options](http://www.jshint.com/docs/options/):
 
 ```
 // Enforcing
