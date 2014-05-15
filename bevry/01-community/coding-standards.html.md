@@ -22,6 +22,8 @@ Spaces (not tabs) should be used for column alignment. This is because:
 
 For when to use (or mot use) column alignment, refer to the following table:
 
+_NOTE:_ the following table is not rendering correctly on bevry.me, [see it here instead.](https://github.com/bevry/documentation/blob/master/bevry/01-community/coding-standards.html.md#column-alignment)
+
 <table>
 <tr><th>No Column Alignment</th><th>With Column Alignment</th></tr>
 <tr><td><pre>one: 1
