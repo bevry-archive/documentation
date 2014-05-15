@@ -199,7 +199,9 @@ When specifying dependencies, we will use the `~` operator at the start of the v
 
 The reasoning why we only allow patch releases to automatically be installed, is that anything else could mean that when a re-install of our project happens, things could be broken. This could happen when doing a production deploy, a new person installs your project, or simply when you come back to you project after a while of inactivity.
 
-We use to allow minor releases to be installed automatically, but the amount of breaks they caused from the situations above was too much, hence this standard of practice being put in place.
+We use to allow minor releases to be installed automatically, but the amount of breaks they caused from the situations above was too much, hence this standard of practice being put in place
+
+[More information on this decision here.](https://github.com/npm/npm/issues/4587)
 
 
 ## Package Managers & Module Loaders
