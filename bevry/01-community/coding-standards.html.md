@@ -9,7 +9,7 @@ USA English should be used within your code. This is because the majority of mod
 
 Tabs should be used for indentation. This is because:
 
-1. Tabs allow _everyone_ who uses your code to view it with their ideal indentation size
+1. Tabs allow _everyone_ who uses your code to view it with their ideal indentation size, anything else would be oppressive
 2. Tabs help prevent incorrect indentation, that can cause unsightly code, as well as errors in indentation based languages (a missing space is very difficult to notice)
 
 
