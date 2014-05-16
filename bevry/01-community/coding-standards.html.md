@@ -26,15 +26,15 @@ _NOTE:_ the following table is not rendering correctly on bevry.me, [see it here
 
 <table>
 <tr><th>No Column Alignment</th><th>With Column Alignment</th></tr>
-<tr><td><pre>one: 1
+<tr><td><code><pre>one: 1
 two: 2
-three: 3</pre></td>
-<td><pre>one:    1
+three: 3</pre></code></td>
+<td><code><pre>one:    1
 two:    2
-three:  3</pre></tr>
+three:  3</pre></code></tr>
 <tr>
-<td>Best for when faster reading/cognition of row-by-row data is desired. Within code this is generally the vast majority of cases: e.g. key-value-pairs.</td>
-<td>Best for when faster reading/cognition of column-by-column is desired. Within text this is generally the vast majority of cases: e.g. presenting table data. Align using spaces.</td>
+<td>Best for when faster reading/cognition of <strong>row-by-row</strong> data is desired. Within code this is generally the vast majority of cases (e.g., key-value-pairs).</td>
+<td>Best for when faster reading/cognition of <strong>column-by-column</strong> is desired. Within text this is generally the vast majority of cases (e.g., presenting table data). Align using spaces.</td>
 </tr>
 </table>
 
@@ -58,7 +58,7 @@ jsonHandler.toJSON()
 
 #### JavaDoc Format
 
-Utilization of the JavaDoc format is decided per-project.
+Use of the JavaDoc format is determined on a per-project basis.
 
 
 #### Sections
@@ -74,9 +74,9 @@ Utilization of the JavaDoc format is decided per-project.
 ...
 ```
 
-Sections are used to indicate when the context of the code has changed, for instance grouping of particular functions or logic. Sections have two main advantages, they increase the speed of noticing and understanding context changes, as well as increasing the speed of cognition - without having to actually read any code.
+Sections are used to indicate when the context of the code has changed, for instance grouping of particular functions or logic. Sections have two main advantages, they increase the speed of noticing and understanding context changes, as well as increasing the speed of cognition—without having to actually read any code.
 
-The main sections and sub sections utilise a horizontal rule. The last part of the horizontal rule should always lay on the 40th column. The headings should be concise (only a few words max)
+The main sections and sub-sections utilise a horizontal rule. The last part of the horizontal rule should always lay on the 40th column. Headings should be concise (only a few words max)
 
 Example:
 
@@ -119,16 +119,16 @@ class DocPad
 
 ### Parenthesis
 
-Use parenthesis as much as possible, especially when:
+Use parentheses as much as possible, especially when…:
 
-- when the function call only accepts a few arguments, e.g. `complete(err)`
-- when the function call is before another statement, e.g. `return fatal(err)  if err`
-- when the function call utilises the `?` operator, e.g. `next?(err)`
+- …the function call only accepts a few arguments (e.g., `complete(err)`)
+- …the function call is before another statement (e.g., `return fatal(err)  if err`)
+- æthe function call utilises the `?` operator (e.g., `next?(err)`)
 
-Occasionally it is okay to not use them, such instances where it beneficial not use parenthesis are:
+Occasionally, it’s okay to not use them. Some instances where it beneficial not use parentheses are:
 
-- when the function call utilises a single inline callback, which is the last argument, e.g. `path.exists __filename, (exists) ->`
-- when the function call accepts unlimited arguments, e.g. `console.log "Hello"`
+- when the function call utilises a single inline callback, which is the last argument (e.g., `path.exists __filename, (exists) ->`)
+- when the function call accepts unlimited arguments (e.g., `console.log "Hello"`)
 
 
 ### Returning
@@ -140,7 +140,7 @@ Each function should have an explicit return, if it doesn't then make it chain. 
 
 ### JSHint Options
 
-We utilise the following [jshint](http://www.jshint.com) [options](http://www.jshint.com/docs/options/):
+We use the following [jshint](http://www.jshint.com) [options](http://www.jshint.com/docs/options/):
 
 ```
 // Enforcing
@@ -176,10 +176,10 @@ Bevry uses CoffeeScript for all its non-[trivial](https://github.com/bevry/binar
 
 With the use of Bevry's [base files](https://github.com/bevry/base) it is very easy to bootstrap a new project, and have compilation handled.
 
-The biggest complaint we here about the use of CoffeeScript is it reduces contributors. We feel this is an artificial complaint, here's why.
+The biggest complaint we hear about the use of CoffeeScript is that it reduces contributors. We feel this is an artificial complaint, here's why.
 
 - [Unix Philsophy](http://en.wikipedia.org/wiki/Unix_philosophy): Rule of Generation: Developers should avoid writing code by hand and instead write abstract high-level programs that generate code. This rule aims to reduce humans errors and save time
-- CoffeeScript includes built-in high-level standard ways to do classes, for in loops, for of loops, bindings, etc
+- CoffeeScript includes built-in high-level standard ways to do classes, `for…in` loops, `for…of` loops, bindings, etc.
 - JavaScript you either write unnecessarily complex code that increases risk of error and decreases code readability and portability, or include a library like underscore, just to do the same things
 - This causes arguments in the JavaScript communities about which libaries to use, which class system to use, which semicolon standard to use, which comma standard to use, etc
 - These arguments add unnecessary noise in the community, that reduce effectiveness, reduce effeciency, and reduces contributors due to the different standards being used than what they are used to
@@ -195,7 +195,7 @@ Bevry abides by [semantic versioning principles](http://semver.org/), that is to
 - Minor releases `v1.1`, contain breaking changes for some people
 - Patch releases `v1.1.1`, contain no breaking changes
 
-When specifying dependencies, we will use the `~` operator at the start of the version number, like so `~1.3.2` which will allow versions after `1.3.2` but before `1.4.0`.
+When specifying dependencies, we will use the `~` operator at the start of the version number, like so: `~1.3.2`. This will allow versions after `1.3.2`, but before `1.4.0`.
 
 The reasoning why we only allow patch releases to automatically be installed, is that anything else could mean that when a re-install of our project happens, things could be broken. This could happen when doing a production deploy, a new person installs your project, or simply when you come back to you project after a while of inactivity.
 
@@ -208,7 +208,7 @@ We use to allow minor releases to be installed automatically, but the amount of 
 
 Bevry only publishes modules to the npm registry, avoiding the component and bower package managers altogether.
 
-The reasoning for this is that we use to publish to the package managers component and bower, and include support for the module loaders AMD, Require.js, and Global Namespacing (aka none) — but it just become too much to manage and deal with.
+The reasoning for this is that we use to publish to the package managers component and bower, and include support for the module loaders AMD, Require.js, and Global Namespacing (aka none)—but it just become too much to manage and deal with.
 
 The package managers Component and Bower both use git repositories as their registry, meaning that you must bundle the production distribution of your packge with your source files in your git repository. This makes your git repository get quite large, and pollutes the change history. Neither of these package managers, have any stance on which module loader you should use, creating extra complexity.
 
@@ -220,6 +220,6 @@ NPM + Browserify offer a lot of control over your packages, and you can even [ad
 
 Ender also makes it easy for people who don't need the control (and complexity) of the npm + browserify solution to easily be able to bundle and add libraries together into a production ready build file.
 
-But for those who want the ultimate simplicitly, tools like [wzrd.in](http://wzrd.in) and [requirebin](http://requirebin.com/) allow you to easily just create CDN ready distros of commonjs npm published modules right away, for instant inclusion in your application. Awesome.
+But for those who want the ultimate simplicitly, tools like [wzrd.in](http://wzrd.in) and [requirebin](http://requirebin.com) allow you to easily just create CDN ready distros of commonjs npm published modules right away, for instant inclusion in your application. Awesome.
 
-So for all those reasons, we feel the commonjs utilitly belt of npm, browserify, ender, wzrd.in and requirebin, is the ultimate solution. Whereas solutions like AMD, Require.js, bower and component, just cause headaches.
+So for all those reasons, we feel the commonjs utilitly belt of npm, browserify, ender, wzrd.in, and requirebin comprise the ultimate solution. Whereas solutions like AMD, Require.js, bower and component, just cause headaches.
