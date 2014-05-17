@@ -190,7 +190,7 @@ The biggest complaint we hear about the use of CoffeeScript is that it reduces c
 - write unnecessarily complex code (that increases risk of error and decreases code readability and portability), *or* 
 - include a library such as Underscore (to accomplish the same thing)
 
-This causes arguments in the community about which libraries to use, which class system to use, which semicolon standard to use, which comma standard to use, and so on. These arguments add unnecessary noise to the community. The result is reduced effectiveness, reduced effeciency, and reduced contributors (due to standards that differ from what they're used to).
+This causes arguments in the community about which libraries to use, which class system to use, which semicolon standard to use, which comma standard to use, and so on. These arguments add unnecessary noise to the community. The result is reduced effectiveness, reduced efficiency, and reduced contributors (due to standards that differ from what they're used to).
 
 
 ### Benefits of CoffeeScript
@@ -246,7 +246,7 @@ With **CommonJS**, **NPM**, **Browserify**, and **Ender**, you publish only your
 
 **Ender** makes it easy for people who don't need the control (and complexity) of the NPM + Browserify solution to easily bundle and add libraries together into a production-ready buildfile.
 
-But if want ultimate simplicitly, **tools like [Wzrd.in](http://wzrd.in) and [requirebin](http://requirebin.com)** allow you to easily create CDN-ready distributions of CommonJS- or NPM-published modules immediately. They're ready for instant inclusion in your application. Awesome.
+But if want ultimate simplicitly, **tools like [Wzrd.in](http://wzrd.in) and [requirebin](http://requirebin.com)** allow you to easily create CDN-ready distributions of CommonJS or NPM-published modules immediately. They're ready for instant inclusion in your application. Awesome.
 
 ### Conclusion
-It's for all these reasons that we feel that AMD, Require.js, Bower, and Component just cause headaches—whereas the CommonJS “utilitly belt” of NPM, Browserify, Ender, Wzrd.in, and requirebin comprise the ultimate solution.
+It's for all these reasons that we feel that AMD, Require.js, Bower, and Component just cause headaches—whereas the CommonJS "utilitly belt" of NPM, Browserify, Ender, Wzrd.in, and requirebin comprise the ultimate solution.
