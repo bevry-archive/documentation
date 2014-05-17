@@ -230,16 +230,23 @@ Bevry only publishes modules to the NPM registry, avoiding the Component and Bow
 
 In the past, we used to publish to the Component and Bower package managers, and include support for the module loaders, AMD, Require.js, and global namespacing (i.e. none). But it became overwhelming to manage them all.
 
+
+### Drawbacks of Other Package Managers
 The Component and Bower package managers both use git repositories as their registry, which requires you to bundle the production distribution of your packge with your source files in your git repository. Unfortunately, this bloats the repository, and pollutes its change history. And since neither package manager has a preferred module loader, the issue is complicated even further.
 
+
+### Drawbacks of Other Module Loaders
 The module loaders AMD, Require.js, and global namespacing (i.e. none) require you to use a [UMD style header definition](https://github.com/docpad/docpad-plugin-umd#usage) in your projects pre-distribution. They also require an impractical number of testing to ensure that your library loads against each one. If you don't write all those tests, then you get error reports on how it doesn't work under an environment you don't use. So, you push a fix—and it breaks another environment you don't use.
 
-With the CommonJS, NPM, Browserify, and Ender solution, you publish only your production files—not your source files—to the NPM registry. This keeps your repository's size lean, and preserves the integrity of changelogs beside production files. It also means that even if GitHub goes down (which happens a bit), you can still install things.
 
-NPM + Browserify offer a lot of control over your packages, and you can even [add UMD headers at compile time](http://dontkry.com/posts/code/Browserify-and-the-universal-module-definition.html) if you insist on them. However, UMD lacks the beautiful simplicitly of CommonJS. Importing a module is as easy as `require('module-name')`. And you never have to worry about version conflicts (something that component users do have to worry about).
+### Benefits of Our System
+With **CommonJS**, **NPM**, **Browserify**, and **Ender**, you publish only your *production* files (not your *source* files) to the NPM registry. This keeps your repository's size lean, and preserves the integrity of changelogs beside production files. It also means that even if GitHub goes down (which happens a bit), you can still install things.
 
-Ender also makes it easy for people who don't need the control (and complexity) of the NPM + Browserify solution to easily bundle and add libraries together into a production-ready buildfile.
+**NPM + Browserify** offer a lot of control over your packages. If you insist on UMD headers, you can even [add the headers at compile time](http://dontkry.com/posts/code/Browserify-and-the-universal-module-definition.html). But be warned: UMD lacks the beautiful simplicitly of CommonJS! In CommonJS, importing a module is as easy as `require('module-name')`. And you never have to worry about version conflicts (as is the case with Component).
 
-But for those who want the ultimate simplicitly, tools like [Wzrd.in](http://wzrd.in) and [requirebin](http://requirebin.com) allow you to easily just create CDN ready distros of CommonJS NPM published modules right away, for instant inclusion in your application. Awesome.
+**Ender** makes it easy for people who don't need the control (and complexity) of the NPM + Browserify solution to easily bundle and add libraries together into a production-ready buildfile.
 
+But if want ultimate simplicitly, **tools like [Wzrd.in](http://wzrd.in) and [requirebin](http://requirebin.com)** allow you to easily create CDN-ready distributions of CommonJS- or NPM-published modules immediately. They're ready for instant inclusion in your application. Awesome.
+
+### Conclusion
 It's for all these reasons that we feel that AMD, Require.js, Bower, and Component just cause headaches—whereas the CommonJS “utilitly belt” of NPM, Browserify, Ender, Wzrd.in, and requirebin comprise the ultimate solution.
