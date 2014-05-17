@@ -22,20 +22,24 @@ Spaces (not tabs) should be used for column alignment. This is because:
 
 For when to use (or mot use) column alignment, refer to the following table:
 
-_NOTE:_ the following table is not rendering correctly on bevry.me, [see it here instead.](https://github.com/bevry/documentation/blob/master/bevry/01-community/coding-standards.html.md#column-alignment)
+_NOTE:_ The following table is not rendering correctly on bevry.me, [see it here instead.](https://github.com/bevry/documentation/blob/master/bevry/01-community/coding-standards.html.md#column-alignment)
 
 <table>
-<tr><th>No Column Alignment</th><th>With Column Alignment</th></tr>
-<tr><td><code><pre>one: 1
+<tr>
+	<th>No Column Alignment</th>
+	<th>With Column Alignment</th></tr>
+
+<tr>
+	<td><code><pre>one: 1
 two: 2
 three: 3</pre></code></td>
-<td><code><pre>one:    1
+	<td><code><pre>one:    1
 two:    2
 three:  3</pre></code></tr>
+
 <tr>
-<td>Best for when faster reading/cognition of <strong>row-by-row</strong> data is desired. Within code this is generally the vast majority of cases (e.g., key-value-pairs).</td>
-<td>Best for when faster reading/cognition of <strong>column-by-column</strong> is desired. Within text this is generally the vast majority of cases (e.g., presenting table data). Align using spaces.</td>
-</tr>
+	<td>Best for when faster reading/cognition of <strong>row-by-row</strong> data is desired. Within code this is generally the vast majority of cases (e.g., key-value-pairs).</td>
+	<td>Best for when faster reading/cognition of <strong>column-by-column</strong> is desired. Within text this is generally the vast majority of cases (e.g., presenting table data). Align using spaces.</td></tr>
 </table>
 
 
@@ -176,9 +180,7 @@ Bevry uses CoffeeScript for all its non-[trivial](https://github.com/bevry/binar
 
 With the use of Bevry's [base files](https://github.com/bevry/base) it is very easy to bootstrap a new project, and have compilation handled.
 
-The biggest complaint we hear about the use of CoffeeScript is that it reduces contributors. We feel this is faulty argument. Here's why:
-
-**The Rule of Generation** (from the [Unix Philosophy](http://en.wikipedia.org/wiki/Unix_philosophy)): Developers should avoid writing code by hand and instead write abstract high-level programs that generate code. This rule reduces humans errors and saves time.
+The biggest complaint we hear about the use of CoffeeScript is that it reduces contributors. We disagree. Here's why:
 
 **JavaScript** forces you to either:
 
@@ -190,7 +192,9 @@ This causes arguments in the community about which libraries to use, which class
 **CoffeeScript**, by contrast: 
 
 - includes built-in high-level standard ways to do classes, `for…in` loops, `for…of` loops, bindings, etc.
-- is easy to learn (can create code in a half a day, master in a week). 
+- is easy to learn (can create code in a half a day, master in a week)
+- follows **the Rule of Generation** (from the [Unix Philosophy](http://en.wikipedia.org/wiki/Unix_philosophy))
+  <blockquote>Developers should avoid writing code by hand and instead write abstract high-level programs that generate code. This rule reduces humans errors and saves time.</blockquote>
 
 This sidesteps most of the arguments about choice of libraries and coding standards. The result is increased contributors, increased effectiveness, and increased efficiency.
 
