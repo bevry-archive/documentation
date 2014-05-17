@@ -182,12 +182,18 @@ With the use of Bevry's [base files](https://github.com/bevry/base) it is very e
 
 The biggest complaint we hear about the use of CoffeeScript is that it reduces contributors. We disagree. Here's why:
 
+
+### Drawbacks of JavaScript
+
 **JavaScript** forces you to either:
 
 - write unnecessarily complex code (that increases risk of error and decreases code readability and portability), *or* 
 - include a library such as Underscore (to accomplish the same thing)
 
 This causes arguments in the community about which libraries to use, which class system to use, which semicolon standard to use, which comma standard to use, and so on. These arguments add unnecessary noise to the community. The result is reduced effectiveness, reduced effeciency, and reduced contributors (due to standards that differ from what they're used to).
+
+
+### Benefits of CoffeeScript
 
 **CoffeeScript**, by contrast: 
 
