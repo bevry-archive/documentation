@@ -44,7 +44,7 @@ three:  3</pre></code></tr>
 Class names should be CamelCase, while everything else should be camelCase. Acronyms should be treated specially.
 
 
-``` coffeescript
+```coffeescript
 class JSONHandler
 	toJSON: ->
 
@@ -63,7 +63,7 @@ Use of the JavaDoc format is determined on a per-project basis.
 
 #### Sections
 
-```
+```coffeescript
 # =====================================
 # Main Section
 
@@ -80,7 +80,7 @@ The main sections and sub-sections utilise a horizontal rule. The last part of t
 
 Example:
 
-```
+```coffeescript
 # =====================================
 # DocPad Class
 
@@ -142,7 +142,7 @@ Each function should have an explicit return, if it doesn't then make it chain. 
 
 We use the following [jshint](http://www.jshint.com) [options](http://www.jshint.com/docs/options/):
 
-```
+```coffeescript
 // Enforcing
 "eqeqeq": true,
 "laxbreak": true,
