@@ -242,7 +242,7 @@ The module loaders AMD, Require.js, and global namespacing (i.e. none) require y
 ### Benefits of Our System
 With **CommonJS**, **NPM**, **Browserify**, and **Ender**, you publish only your *production* files (not your *source* files) to the NPM registry. This keeps your repository's size lean, and preserves the integrity of changelogs beside production files. It also means that even if GitHub goes down (which happens a bit), you can still install things.
 
-**NPM + Browserify** offer a lot of control over your packages. If you insist on UMD headers, you can even [add the headers at compile time](http://dontkry.com/posts/code/Browserify-and-the-universal-module-definition.html). But be warned: UMD lacks the beautiful simplicitly of CommonJS! In CommonJS, importing a module is as easy as `require('module-name')`. And you never have to worry about version conflicts (as is the case with Component).
+**NPM + Browserify** offer a lot of control over your packages. If you insist on UMD headers, you can even [add the headers at compile time](http://dontkry.com/posts/code/browserify-and-the-universal-module-definition.html). But be warned: UMD lacks the beautiful simplicitly of CommonJS! In CommonJS, importing a module is as easy as `require('module-name')`. And you never have to worry about version conflicts (as is the case with Component).
 
 **Ender** makes it easy for people who don't need the control (and complexity) of the NPM + Browserify solution to easily bundle and add libraries together into a production-ready buildfile.
 
