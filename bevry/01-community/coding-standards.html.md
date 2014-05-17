@@ -119,11 +119,11 @@ class DocPad
 
 ### Parenthesis
 
-Use parentheses as much as possible, especially when…:
+Use parentheses as much as possible, especially when...:
 
-- …the function call only accepts a few arguments (e.g., `complete(err)`)
-- …the function call is before another statement (e.g., `return fatal(err)  if err`)
-- æthe function call utilises the `?` operator (e.g., `next?(err)`)
+- ...the function call only accepts a few arguments (e.g., `complete(err)`)
+- ...the function call is before another statement (e.g., `return fatal(err)  if err`)
+- ...the function call utilises the `?` operator (e.g., `next?(err)`)
 
 Occasionally, it’s okay to not use them. Some instances where it beneficial not use parentheses are:
 
