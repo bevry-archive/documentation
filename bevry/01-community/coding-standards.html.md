@@ -117,7 +117,7 @@ class DocPad
 
 ## CoffeeScript
 
-### Parenthesis
+### Parentheses
 
 Use parentheses as much as possible, especially when...:
 
