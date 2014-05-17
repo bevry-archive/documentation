@@ -209,7 +209,7 @@ If we were to implement DocPad in JavaScript, we'd still be arguing to this day 
 
 ## Semantic Versioning
 
-Bevry abides by [semantic versioning principles](http://semver.org/), that is to say:
+Bevry abides by [semantic versioning principles](http://semver.org), that is to say:
 
 - Major releases `v1`, contain breaking changes for everyone
 - Minor releases `v1.1`, contain breaking changes for some people
