@@ -76,7 +76,7 @@ Use of the JavaDoc format is determined on a per-project basis.
 
 Sections are used to indicate when the context of the code has changed, for instance grouping of particular functions or logic. Sections have two main advantages, they increase the speed of noticing and understanding context changes, as well as increasing the speed of cognition—without having to actually read any code.
 
-The main sections and sub-sections utilise a horizontal rule. The last part of the horizontal rule should always lay on the 40th column. Headings should be concise (only a few words max)
+The main sections and sub-sections use a horizontal rule. The last part of the horizontal rule should always lay on the 40th column. Headings should be concise (only a few words max)
 
 Example:
 
@@ -123,17 +123,17 @@ Use parentheses as much as possible, especially when...:
 
 - ...the function call only accepts a few arguments (e.g., `complete(err)`)
 - ...the function call is before another statement (e.g., `return fatal(err)  if err`)
-- ...the function call utilises the `?` operator (e.g., `next?(err)`)
+- ...the function call uses the `?` operator (e.g., `next?(err)`)
 
 Occasionally, it’s okay to not use them. Some instances where it beneficial not use parentheses are:
 
-- when the function call utilises a single inline callback, which is the last argument (e.g., `path.exists __filename, (exists) ->`)
+- when the function call uses a single inline callback, which is the last argument (e.g., `path.exists __filename, (exists) ->`)
 - when the function call accepts unlimited arguments (e.g., `console.log "Hello"`)
 
 
 ### Returning
 
-Each function should have an explicit return, if it doesn't then make it chain. If you wish to utilise CoffeeScripts automatic return ability, then a comment stating you are using this should be used each time.
+Each function should have an explicit return, if it doesn't then make it chain. If you wish to use CoffeeScripts automatic return ability, then a comment stating you are using this should be used each time.
 
 
 ## JavaScript
