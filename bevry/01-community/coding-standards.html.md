@@ -74,9 +74,9 @@ Use of the JavaDoc format is determined on a per-project basis.
 ...
 ```
 
-Sections are used to indicate when the context of the code has changed, for instance grouping of particular functions or logic. Sections have two main advantages, they increase the speed of noticing and understanding context changes, as well as increasing the speed of cognition—without having to actually read any code.
+Sections indicate when the context of the code has changed (e.g., grouping of particular functions or logic). Sections have two main advantages: they make recognizing and understanding context changes faster, as well as increasing the speed of cognition—without having to actually read any code.
 
-The main sections and sub-sections use a horizontal rule. The last part of the horizontal rule should always lay on the 40th column. Headings should be concise (only a few words max)
+The main sections and sub-sections use a horizontal rule. The last part of the horizontal rule should always lay on the 40th column. Headings should be concise (only a few words).
 
 Example:
 
@@ -133,7 +133,7 @@ Occasionally, it’s okay to not use them. Some instances where it beneficial no
 
 ### Returning
 
-Each function should have an explicit return, if it doesn't then make it chain. If you wish to use CoffeeScripts automatic return ability, then a comment stating you are using this should be used each time.
+Each function should have an explicit `return`. If it doesn't, then it should chain. If you wish to use CoffeeScripts automatic return ability, add a comment indicating it each and every time.
 
 
 ## JavaScript
@@ -176,15 +176,25 @@ Bevry uses CoffeeScript for all its non-[trivial](https://github.com/bevry/binar
 
 With the use of Bevry's [base files](https://github.com/bevry/base) it is very easy to bootstrap a new project, and have compilation handled.
 
-The biggest complaint we hear about the use of CoffeeScript is that it reduces contributors. We feel this is an artificial complaint, here's why.
+The biggest complaint we hear about the use of CoffeeScript is that it reduces contributors. We feel this is faulty argument. Here's why:
 
-- [Unix Philsophy](http://en.wikipedia.org/wiki/Unix_philosophy): Rule of Generation: Developers should avoid writing code by hand and instead write abstract high-level programs that generate code. This rule aims to reduce humans errors and save time
-- CoffeeScript includes built-in high-level standard ways to do classes, `for…in` loops, `for…of` loops, bindings, etc.
-- JavaScript you either write unnecessarily complex code that increases risk of error and decreases code readability and portability, or include a library like underscore, just to do the same things
-- This causes arguments in the JavaScript communities about which libaries to use, which class system to use, which semicolon standard to use, which comma standard to use, etc
-- These arguments add unnecessary noise in the community, that reduce effectiveness, reduce effeciency, and reduces contributors due to the different standards being used than what they are used to
-- CoffeeScript is easy to learn (can create code in a half a day, master in a week), and avoids these different coding standards and which-library arguments, increasing contributors, effectiveness, effeciency
-- If we were to implement DocPad in JavaScript, we'd still be arguing to this day, which class system we should use
+**The Rule of Generation** (from the [Unix Philosophy](http://en.wikipedia.org/wiki/Unix_philosophy)): Developers should avoid writing code by hand and instead write abstract high-level programs that generate code. This rule reduces humans errors and saves time.
+
+**JavaScript** forces you to either:
+
+- write unnecessarily complex code (that increases risk of error and decreases code readability and portability), *or* 
+- include a library such as Underscore (to accomplish the same thing)
+
+This causes arguments in the community about which libraries to use, which class system to use, which semicolon standard to use, which comma standard to use, and so on. These arguments add unnecessary noise to the community. The result is reduced effectiveness, reduced effeciency, and reduced contributors (due to standards that differ from what they're used to).
+
+**CoffeeScript**, by contrast: 
+
+- includes built-in high-level standard ways to do classes, `for…in` loops, `for…of` loops, bindings, etc.
+- is easy to learn (can create code in a half a day, master in a week). 
+
+This sidesteps most of the arguments about choice of libraries and coding standards. The result is increased contributors, increased effectiveness, and increased efficiency.
+
+If we were to implement DocPad in JavaScript, we'd still be arguing to this day about which class system to use.
 
 
 ## Semantic Versioning
@@ -197,9 +207,9 @@ Bevry abides by [semantic versioning principles](http://semver.org/), that is to
 
 When specifying dependencies, we will use the `~` operator at the start of the version number, like so: `~1.3.2`. This will allow versions after `1.3.2`, but before `1.4.0`.
 
-The reasoning why we only allow patch releases to automatically be installed, is that anything else could mean that when a re-install of our project happens, things could be broken. This could happen when doing a production deploy, a new person installs your project, or simply when you come back to you project after a while of inactivity.
+We used to allow minor releases to be install automatically, but the resulting breaks were too much. Breaks could happen whenever our project is re-installed. This could happen during a production deployment; or when a new person installs your project; or simply when you come back to you project after a period of inactivity.
 
-We use to allow minor releases to be installed automatically, but the amount of breaks they caused from the situations above was too much, hence this standard of practice being put in place
+That's why we only allow patch releases to install automatically. 
 
 [More information on this decision here.](https://github.com/npm/npm/issues/4587)
 
