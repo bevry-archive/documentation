@@ -154,4 +154,5 @@ While completely independent of Joe, Joe works absolutely lovely with the [Chai]
 - Mocha has no way to know exactly which tests are tied to which suites, it only guesses the relationship based on which tests and which suite was last created. So when creating your tests and suites asynchronously, it all falls down.
 - Mocha will probably crash when your create your tests asynchronously. [More info](https://gist.github.com/2306572).
 - Mocha requires custom reporters to be bundled within it, rather than as their own npm modules.
+- Mocha tests must be run through the mocha runner, joe tests can be run directly
 
