@@ -3,7 +3,7 @@ title: Node's Ecosystem
 ```
 
 ## Core
-Node was created by [Ryan Dahl](https://github.com/ry). It is now owned and operated by [Joyent](http://joyent.com/) and [lead by](https://groups.google.com/forum/#!msg/nodejs/hfajgpvGTLY/DioyFo3t3A4J) [Isaac Schlueter](https://github.com/isaacs). Node is open-source and [located on github](http://github.com/joyent/node) - anyone can play a part in shaping its future.
+Node was created by [Ryan Dahl](https://github.com/ry). It is now owned and operated by [Joyent](http://joyent.com/). Node is open-source and [located on github](http://github.com/joyent/node) - anyone can play a part in shaping its future.
 
 The mission of the core is to be as lightweight as possible. If a module can do something, then it won't make it into the core.
 
