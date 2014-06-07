@@ -1,5 +1,10 @@
 ## All languages
 
+### [EditorConfig](http://editorconfig.org/)
+
+[Get our `.editorconfig` configuration file](https://github.com/bevry/base/blob/master/.editorconfig)
+
+
 ### Spelling
 
 USA English should be used within your code. This is because the majority of modules are written in USA English, and it would cause useless inconsitencies in your code if in some places you used `color` and others `colour`.
@@ -117,6 +122,11 @@ class DocPad
 
 ## CoffeeScript
 
+### [CoffeeLint](http://www.coffeelint.org/) [Options](http://www.coffeelint.org/#options)
+
+[Get our `coffeelint.json` configuration file](https://github.com/bevry/base/blob/master/coffeelint.json)
+
+
 ### Parenthesis
 
 Use parenthesis as much as possible, especially when:
@@ -138,36 +148,9 @@ Each function should have an explicit return, if it doesn't then make it chain. 
 
 ## JavaScript
 
-### JSHint Options
+### [JSHint](http://www.jshint.com) [Options](http://www.jshint.com/docs/options/)
 
-We utilise the following [jshint](http://www.jshint.com) [options](http://www.jshint.com/docs/options/):
-
-```
-// Enforcing
-"eqeqeq": true,
-"laxbreak": true,
-"undef": true,
-"newcap": true,
-"noarg": true,
-"strict": true,
-"trailing": true,
-"onecase": true,
-
-// Relaxing
-"boss": true,
-"eqnull": true,
-"evil": true,
-"sub": true,
-"regexdash": true,
-"smarttabs": true,
-
-// Environments
-"browser": true,
-"wsh": true,
-
-// Legacy
-"onevar": false
-```
+[Get our `.jshintrc` configuration file](https://github.com/bevry/base/blob/master/.jshintrc)
 
 
 ## Language Selection
