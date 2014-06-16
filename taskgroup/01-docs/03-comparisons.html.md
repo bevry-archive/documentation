@@ -16,17 +16,29 @@ Let's take a look at what the most common async.js methods would look like in Ta
 // Async
 async.series([
 	function(){},
-	function(callback){callback();}
+	function(callback){
+		callback();
+	}
 ], next);
 
-// TaskGroup
+// TaskGroup via Config
 new TaskGroup({
 	tasks: [
 		function(){},
-		function(callback){callback();}
+		function(callback){
+			callback();
+		}
 	],
 	next: next
 }).run();
+
+// TaskGroup via API
+var tasks = TaskGroup.create().done(next);
+tasks.addTask(function(){});
+tasks.addTask(function(callback){
+	callback();
+});
+tasks.run();
 
 
 // ====================================
@@ -35,10 +47,12 @@ new TaskGroup({
 // Async
 async.parallel([
 	function(){},
-	function(callback){callback();}
+	function(callback){
+		callback();
+	}
 ], next);
 
-// TaskGroup
+// TaskGroup via Config
 new TaskGroup({
 	concurrency: 0,
 	tasks: [
@@ -48,13 +62,22 @@ new TaskGroup({
 	next: next
 }).run();
 
+// TaskGroup via API
+var tasks = TaskGroup.create({concurrency: 0}).done(next);
+tasks.addTask(function(){});
+tasks.addTask(function(callback){
+	callback();
+});
+tasks.run();
+
+
 // ====================================
 // Map
 
 // Async
 async.map(['file1','file2','file3'], fs.stat, next);
 
-// TaskGroup
+// TaskGroup via Config
 new TaskGroup({
 	concurrency: 0,
 	tasks: ['file1', 'file2', 'file3'].map(function(file){
@@ -64,6 +87,15 @@ new TaskGroup({
 	}),
 	next: next
 }).run();
+
+// TaskGroup via API
+var tasks = TaskGroup.create().done(next);
+['file1', 'file2', 'file3'].forEach(function(file){
+	tasks.addTask(function(complete){
+		fs.stat(file, complete);
+	});
+});
+tasks.run();
 ```
 
 Another big advantage of TaskGroup over async.js is TaskGroup's ability to add tasks to the group once execution has already started - this is a common use case when creating an application that must perform it's actions serially, so using TaskGroup you can create a serial TaskGroup for the application, run it right away, then add the actions to the group as tasks.
