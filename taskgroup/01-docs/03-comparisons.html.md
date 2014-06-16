@@ -57,7 +57,9 @@ new TaskGroup({
 	concurrency: 0,
 	tasks: [
 		function(){},
-		function(callback){callback();}
+		function(callback){
+			callback();
+		}
 	],
 	next: next
 }).run();
