@@ -1,6 +1,6 @@
----
+```
 title: "Introduction Guide & Usage Examples"
----
+```
 
 [TaskGroup](https://github.com/bevry/taskgroup) provides two classes, `Task` and `TaskGroup`
 
@@ -26,7 +26,7 @@ var task = new Task(function(){
 });
 
 // Add our completion callback for once the task has completed
-task.once('complete', function(err, result){
+task.done(function(err, result){
 	// Do something now that the task has completed ...
 	console.log([err, result]);
 	/* [null, "a sychronous result"] */
@@ -47,14 +47,14 @@ var task = new Task(function(complete){
 	setTimeout(function(){
 		// the error is the first callback argument, and the results the following arguments
 		return complete(null, "an asychronous result");
-		
+
 		// So to provide an error instead, you would just pass over the first callback argument
 		// return complete("something went wrong")
 	}, 5000);  // execute the timeout after 5 seconds
 });
 
 // Add our completion callback for once the task has completed
-task.once('complete', function(err, result){
+task.done(function(err, result){
 	// Do something now that the task has completed ...
 	console.log([err, result]);
 	/* [null, "an asychronous result"] */
@@ -90,7 +90,7 @@ tasks.addTask(function(){
 });
 
 // Add our completion callback for once the tasks have completed
-tasks.once('complete', function(err, results){
+tasks.done(function(err, results){
 	console.log([err, result]);
 	/* [null, [
 		[null, "an asychronous result"],
@@ -127,7 +127,7 @@ tasks.addTask(function(){
 });
 
 // Add our completion callback for once the tasks have completed
-tasks.once('complete', function(err, results){
+tasks.done(function(err, results){
 	console.log([err, result]);
 	/* [null, [
 		[null, "a sychronous result"],
@@ -187,7 +187,7 @@ tasks.addTask(function(){
 });
 
 // Add our completion callback for once the tasks have completed
-tasks.once('complete', function(err, results){
+tasks.done(function(err, results){
 	console.log([err, result]);
 	/* [null, [
 		[null, "first serial task"],
@@ -229,7 +229,7 @@ tasks.addTask(function(){
 });
 
 // Add our completion callback for once the tasks have completed
-tasks.once('complete', function(err, results){
+tasks.done(function(err, results){
 	console.log([err, result]);
 	/* [Error("the first task failed"), [
 		[Error("the first task failed")]
@@ -263,7 +263,7 @@ tasks.addTask(function(){
 });
 
 // Add our completion callback for once the tasks have completed
-tasks.once('complete', function(err, results){
+tasks.done(function(err, results){
 	console.log([err, result]);
 	/* [Error("the second task failed"), [
 		[Error("the second task failed")]
@@ -286,7 +286,7 @@ A common mistake for people coming from the complex land of promises, is that th
 task.run();
 
 // Add our completion callback for once the task has completed
-task.once('complete', function(err, result){
+task.done(function(err, result){
 	// Do something now that the task has completed ...
 	console.log([err, result]);
 	/* [null, "a sychronous result"] */
