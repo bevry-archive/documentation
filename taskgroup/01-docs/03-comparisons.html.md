@@ -22,15 +22,16 @@ async.series([
 ], next);
 
 // TaskGroup via Config
-new TaskGroup({
+TaskGroup.create({
 	tasks: [
 		function(){},
 		function(callback){
 			callback();
 		}
 	],
-	next: next
-}).run();
+	next: next,
+	run: true
+});
 
 // TaskGroup via API
 var tasks = TaskGroup.create().done(next);
@@ -53,7 +54,7 @@ async.parallel([
 ], next);
 
 // TaskGroup via Config
-new TaskGroup({
+TaskGroup.create({
 	concurrency: 0,
 	tasks: [
 		function(){},
@@ -61,8 +62,9 @@ new TaskGroup({
 			callback();
 		}
 	],
-	next: next
-}).run();
+	next: next,
+	run: true
+});
 
 // TaskGroup via API
 var tasks = TaskGroup.create({concurrency: 0}).done(next);
@@ -80,15 +82,16 @@ tasks.run();
 async.map(['file1','file2','file3'], fs.stat, next);
 
 // TaskGroup via Config
-new TaskGroup({
+TaskGroup.create({
 	concurrency: 0,
 	tasks: ['file1', 'file2', 'file3'].map(function(file){
 		return function(complete){
 			fs.stat(file, complete);
 		}
 	}),
-	next: next
-}).run();
+	next: next,
+	run: true
+});
 
 // TaskGroup via API
 var tasks = TaskGroup.create().done(next);
