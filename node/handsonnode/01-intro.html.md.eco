@@ -28,7 +28,7 @@ These complimentary parts:
 
 2. It is naturally asynchronous. JavaScript has a unique position as it allows you to code high-level asynchronous and non-blocking code while being aloof to the low-level technical challenges and implementations behind such a thing (aka threading). Writing asynchronous code is as easy as a callback function which anyone who has written a jQuery event handler already knows how to do.
 
-Together, this allows node to offer a non-blocking abilities easily and intuitively. As an example, this means you can read multiple files at the same time (in parallel) without blocking unnecessarily (waiting on something). In other languages, generally you would have to read the files one after the other (serially) waiting on each file to finish reading, before moving onto the next (blocking) - which is very slow. Now sure, non-blocking and parallel capabilities are in other languages, but you need a huge brain to understand how to write them correctly without shooting your foot off - javascript makes it as easy as writing a event handler or callback function with the underlying (and vastly unnecessary) complexity hidden away, making such power more accessible to the masses.
+Together, this allows node to offer non-blocking abilities easily and intuitively. As an example, this means you can read multiple files at the same time (in parallel) without blocking unnecessarily (waiting on something). In other languages, generally you would have to read the files one after the other (serially) waiting on each file to finish reading, before moving onto the next (blocking) - which is very slow. Now sure, non-blocking and parallel capabilities are in other languages, but you need a huge brain to understand how to write them correctly without shooting your foot off - javascript makes it as easy as writing a event handler or callback function with the underlying (and vastly unnecessary) complexity hidden away, making such power more accessible to the masses.
 
 
 ## Examples
@@ -53,4 +53,4 @@ Beware of these things:
 
 2. Adding synchronous flow to an asynchronous program will require some flow control management (there are plenty of flow control libraries you can use to alleviate this complexity). For example, if you want to perform multiple tasks in parallel, but once they have all completed, then move onto the next task.
 
-These are not issues in in naturally synchronous languages, as they do not have the benefit of asynchronous flow to begin with.
+These are not issues found in naturally synchronous languages, as they do not have the benefit of asynchronous flow to begin with.
