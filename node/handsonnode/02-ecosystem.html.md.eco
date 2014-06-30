@@ -21,7 +21,7 @@ A lot is defined here; [the best way to discover their meanings is by referring 
 
 
 ## Modules
-Modules are just like programs, except the author has decided to publish them to the world using [npm](https://npmjs.org/) - which website includes a directory of all the published modules for you surf and discover.
+Modules are just like programs, except the author has decided to publish them to the world using [npm](https://npmjs.org/) - whose website includes a directory of all the published modules for you surf and discover.
 
 - To publish your program as a module, run `npm publish` in your program's directory
 - To use a module in your program, you first install it to your program using `npm install <module-name>`, then you can use it in your code by doing `var theModule = require('module-name');`
@@ -32,7 +32,7 @@ Modules will generally abide by [semantic versioning rules](http://semver.org/) 
 
 ## Discovering Modules
 
-You can find an unreliable listing of a bunch of categorised modules on [Node's Modules Wiki Page](https://github.com/joyent/node/wiki/modules) which is cool for discovering what is around and possible. However if you know what you're after, you're better off doing a search on the [npm website](https://npmjs.org/). Be aware that node changes quickly, so make sure that the module you ware using has tests, and supports your node version - otherwise things get risky.
+You can find an unreliable listing of a bunch of categorised modules on [Node's Modules Wiki Page](https://github.com/joyent/node/wiki/modules) which is cool for discovering what is around and possible. However if you know what you're after, you're better off doing a search on the [npm website](https://npmjs.org/). Be aware that node changes quickly, so make sure that the module you're using has tests, and supports your node version - otherwise things get risky.
 
 
 ## Caution
