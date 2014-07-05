@@ -67,7 +67,7 @@ task.run();
 
 ### TaskGroup
 
-Often at times, we want to execute multipe things and wait for the completion. TaskGroup makes this easy with the other class, `TaskGroup`.
+Often at times, we want to execute multiple things and wait for the completion. TaskGroup makes this easy with the other class, `TaskGroup`.
 
 We simply create a `TaskGroup` and add our Tasks to it!
 
@@ -111,7 +111,7 @@ We can customise the concurrency of the task group by passing it over as a confi
 ``` javascript
 var TaskGroup = require('taskgroup').TaskGroup
 
-// Create our parellel task group
+// Create our parallel task group
 var tasks = new TaskGroup({concurrency:0});
 
 // Add an asynchronous task to it
@@ -139,7 +139,7 @@ tasks.done(function(err, results){
 tasks.run();
 ```
 
-Notice how the groups results are now in a different order. This occured because with parallel execution, we didn't have to wait for the asynchronous fucntion to complete it's 5 second delay before executing and completing the second function (the synchronous one).
+Notice how the groups results are now in a different order. This occured because with parallel execution, we didn't have to wait for the asynchronous function to complete it's 5 second delay before executing and completing the second function (the synchronous one).
 
 You can mix and match as many functions as you want with TaskGroups.
 
@@ -206,7 +206,7 @@ tasks.run();
 
 ### Handling Errors
 
-Safely handling errors is an important thing to do. TaskGroup makes this easy by safely catching any errors that your task my throw, isolating the destruction to the task alone, and providing to the task or taskgroup's completion callback.
+Safely handling errors is an important thing to do. TaskGroup makes this easy by safely catching any errors that your task may throw, isolating the destruction to the task alone, and providing to the task or taskgroup's completion callback.
 
 When an error is detected, the remaining tasks in a TaskGroup will be cleared, and the TaskGroup's completion callback with the error will be fired.
 
@@ -274,7 +274,7 @@ tasks.done(function(err, results){
 tasks.run();
 ```
 
-Now even though the first task's completion callback still fires, it is sucessfully ignored, as the TaskGroup has exited.
+Now even though the first task's completion callback still fires, it is successfully ignored, as the TaskGroup has exited.
 
 
 ### Notes
