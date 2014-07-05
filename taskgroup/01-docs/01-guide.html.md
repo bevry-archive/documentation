@@ -266,7 +266,8 @@ tasks.addTask(function(){
 tasks.done(function(err, results){
 	console.log([err, result]);
 	/* [Error("the second task failed"), [
-		[Error("the second task failed")]
+		[Error("the second task failed")],
+		[Error("the first task failed")]
 	]] */
 });
 
