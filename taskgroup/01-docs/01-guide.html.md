@@ -240,7 +240,7 @@ tasks.done(function(err, results){
 tasks.run();
 ```
 
-Which comes in very handling with dealing with asynchronous parallel code:
+Which comes in very handy when dealing with asynchronous parallel code:
 
 ``` javascript
 var TaskGroup = require('taskgroup').TaskGroup
