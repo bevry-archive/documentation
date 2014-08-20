@@ -27,21 +27,26 @@ Spaces (not tabs) should be used for column alignment. This is because:
 
 For when to use (or mot use) column alignment, refer to the following table:
 
-_NOTE:_ the following table is not rendering correctly on bevry.me, [see it here instead.](https://github.com/bevry/documentation/blob/master/bevry/01-community/coding-standards.html.md#column-alignment)
-
 <table>
-<tr><th>No Column Alignment</th><th>With Column Alignment</th></tr>
-<tr><td><pre>one: 1
+<tbody><tr>
+<th>No Column Alignment</th>
+<th>With Column Alignment</th>
+</tr>
+<tr>
+<td><div class="highlight highlight-html"><pre>one: 1
 two: 2
-three: 3</pre></td>
-<td><pre>one:    1
+three: 3
+</pre></div></td>
+<td><div class="highlight highlight-html"><pre>one:    1
 two:    2
-three:  3</pre></tr>
+three:  3
+</pre></div></td>
+</tr>
 <tr>
 <td>Best for when faster reading/cognition of row-by-row data is desired. Within code this is generally the vast majority of cases: e.g. key-value-pairs.</td>
 <td>Best for when faster reading/cognition of column-by-column is desired. Within text this is generally the vast majority of cases: e.g. presenting table data. Align using spaces.</td>
 </tr>
-</table>
+</tbody></table>
 
 
 ### Naming Convention
