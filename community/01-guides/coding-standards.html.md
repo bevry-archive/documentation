@@ -25,7 +25,7 @@ Spaces (not tabs) should be used for column alignment. This is because:
 1. Tabs can be displayed at different sizes based on the users configuration, meaning that for different users columns could be misaligned.
 2. Spaces will always be displayed the same.
 
-For example:
+As for when to use or not to use Column Alignment, refer to the following:
 
 #### Without Column Alignment
 
