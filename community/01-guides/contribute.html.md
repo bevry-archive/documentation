@@ -52,7 +52,7 @@ DocPad documentation is located at the [`docpad/documentation` repository](https
 
 
 
-## Development Environment
+### Development Environment
 
 Before you begin coding, you have to setup your development environment for our projects. This involves the following steps:
 
@@ -61,12 +61,12 @@ Before you begin coding, you have to setup your development environment for our 
 1. Make your changes!
 
 
-## Publishing
+### Publishing
 
 Follow these steps in order to implement your changes/improvements into your desired project:
 
 
-### Preparation
+#### Preparation
 
 1. Make sure your changes are on their own branch that is branched off from master
     1. You can do this by: `git checkout master; git checkout -b your-new-branch`
@@ -76,7 +76,7 @@ Follow these steps in order to implement your changes/improvements into your des
 1. If the project has a prepublish step, run it: `cake prepublish` (if it doesn't have this step that command will fail)
 
 
-### Pull Request
+#### Pull Request
 
 To send your changes for the project owner to merge in:
 
@@ -85,7 +85,7 @@ To send your changes for the project owner to merge in:
     1. By submitting a pull request you agree for your changes to have the same license as the original plugin
 
 
-### Publish
+#### Publish
 
 To publish your changes as the project owner:
 
