@@ -3,13 +3,15 @@ title: Contributing
 ```
 
 
-## Donations
+
+## General Contributions
+
+### Donations
 
 With your help, we'll be able to work on our open-source projects full time! Isn't that awesome? [Donate now to let that happen!](/donate)
 
 
-
-## Publicize
+### Publicize
 
 Help spread the word:
 
@@ -27,7 +29,16 @@ DocPad users can also:
 
 
 
-## Documentation
+## Contributing Code & Documentation
+
+
+### Coding Standards & Style Guide
+
+Follow the [Bevry Coding Standards](/community/coding-standards) when writing your changes
+
+
+
+### Documentation
 
 To update our documentation:
 
@@ -41,18 +52,13 @@ DocPad documentation is located at the [`docpad/documentation` repository](https
 
 
 
-## Coding Standards
+## Development Environment
 
-Follow the [Bevry Coding Standards](/community/coding-standards) when writing your changes
-
-
-
-
-## Setup
-
+Before you begin coding, you have to setup your development environment for our projects. This involves the following steps:
 
 1. Install [Node.js](/node/install)
 1. Install CoffeeScript globally: `npm install -g coffee-script` (may require `sudo` access). This will give you access to the `cake` command which we use to automate a lot of publishing, build, and testing processes.
+1. Make your changes!
 
 
 ## Publishing
