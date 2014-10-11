@@ -48,6 +48,12 @@ Follow the [Bevry Coding Standards](http://learn.bevry.me/community/coding-stand
 
 
 
+## Setup
+
+
+1. Install CoffeeScript globally: `npm install -g coffee-script` (may require `sudo` access). This will give you access to the `cake` command which we use to automate a lot of publishing, build, and testing processes.
+
+
 ## Publishing
 
 Follow these steps in order to implement your changes/improvements into your desired project:
