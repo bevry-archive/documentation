@@ -17,7 +17,7 @@ Help spread the word:
 - Join the [Bevry Google+ Community](/google+)
 - Talk about us on Social Media; Twitter, Blogging, etc.
 - Write about your experiences of our projects on your blog
-- Do a short less than a minute video testimonial of DocPad on Youtube!
+- Do a short less than a minute video testimonial of our project on YouTube!
 - And just continue to be awesome
 
 DocPad users can also:
@@ -31,7 +31,7 @@ DocPad users can also:
 
 To update our documentation:
 
-1. Our documentation is located at the [`docpad/documentation` repository](https://github.com/docpad/documentation)
+1. Our documentation is located at the [`bevry/documentation` repository](https://github.com/bevry/documentation)
 1. We have [strict documentation criteria](http://learn.bevry.me/community/documentation-guidelines) that all documentation changes must abide by
 1. You can edit a file by opening that file in the repository browser, and then clicking the "Edit" button
 1. Once done, click save changes or whatever the button says and this will then take you to a "Submit Pull Request" page
@@ -50,7 +50,8 @@ Follow the [Bevry Coding Standards](http://learn.bevry.me/community/coding-stand
 
 ## Publishing
 
-Follow these steps in order to implement your changes/improvements into the plugin or DocPad core.
+Follow these steps in order to implement your changes/improvements into your desired project:
+
 
 ### Preparation
 
