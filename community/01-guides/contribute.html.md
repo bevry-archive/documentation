@@ -32,7 +32,7 @@ DocPad users can also:
 To update our documentation:
 
 1. Our documentation is located at the [`bevry/documentation` repository](https://github.com/bevry/documentation)
-1. We have [strict documentation criteria](http://learn.bevry.me/community/documentation-guidelines) that all documentation changes must abide by
+1. We have [strict documentation criteria](/community/documentation-guidelines) that all documentation changes must abide by
 1. You can edit a file by opening that file in the repository browser, and then clicking the "Edit" button
 1. Once done, click save changes or whatever the button says and this will then take you to a "Submit Pull Request" page
 1. Fill in the details and click submit
@@ -43,7 +43,7 @@ DocPad documentation is located at the [`docpad/documentation` repository](https
 
 ## Coding Standards
 
-Follow the [Bevry Coding Standards](http://learn.bevry.me/community/coding-standards) when writing your changes
+Follow the [Bevry Coding Standards](/community/coding-standards) when writing your changes
 
 
 
@@ -51,6 +51,7 @@ Follow the [Bevry Coding Standards](http://learn.bevry.me/community/coding-stand
 ## Setup
 
 
+1. Install [Node.js](/node/install)
 1. Install CoffeeScript globally: `npm install -g coffee-script` (may require `sudo` access). This will give you access to the `cake` command which we use to automate a lot of publishing, build, and testing processes.
 
 
@@ -85,7 +86,7 @@ To publish your changes as the project owner:
 1. Switch to the master branch: `git checkout master`
 1. Merge in the changes of the feature branch (if applicable)
 1. Increment the version number in the `package.json` file according to the [semantic versioning](http://semver.org) standard, that is:
-    1. `x.0.0` MAJOR version when you make incompatible API changes (DocPad plugins must use v2 as the major version, as v2 corresponds to the current DocPad v6.x releases)
+    1. `x.0.0` MAJOR version when you make incompatible API changes (note: DocPad plugins must use v2 as the major version, as v2 corresponds to the current DocPad v6.x releases)
     1. `x.y.0` MINOR version when you add functionality in a backwards-compatible manner
     1. `x.y.z` PATCH version when you make backwards-compatible bug fixes
 
