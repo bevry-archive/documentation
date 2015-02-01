@@ -216,7 +216,7 @@ var TaskGroup = require('taskgroup').TaskGroup
 // Create our serial task group
 var tasks = new TaskGroup();
 
-// Add a synchronous task to the TaskGroup
+// Add an asynchronous task to the TaskGroup
 tasks.addTask(function(complete){
 	setTimeout(function(){
 		return complete(new Error("the first task failed"))
@@ -280,9 +280,11 @@ Now even though the first task's completion callback still fires, it is successf
 
 ### Notes
 
+#### Promise Style Mistakes
+
 A common mistake for people coming from the complex land of promises, is that they may make code like this:
 
-```
+``` javascript
 // Execute the task
 task.run();
 
@@ -295,6 +297,13 @@ task.done(function(err, result){
 ```
 
 Expecting the completion callback to fire right away. However, as the TaskGroup is just an event emitter, the completion listener is only fired at the point in time when the `complete` event is emitted. As such, you should always add your completion listener before you run your task or taskgroup, never after.
+
+
+### Legacy Environments
+
+In Node v0.8 and browser environments, TaskGroup may not be able to catch all thrown errors due to the lack of usable [domains](http://nodejs.org/docs/v0.10.35/api/domain.html) in those environments (domains only became usable in Node v0.10.0 and above).
+
+To help ensure errors are caught in all environments, be sure to always follow the [best practices for error handling](http://stackoverflow.com/a/7313005), regardless of your environment.
 
 
 ### Graduation
