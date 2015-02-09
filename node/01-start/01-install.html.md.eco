@@ -2,7 +2,7 @@
 title: "Install Node.js"
 ---
 
-This is Bevry's supported guide for installing [Node.js](http://nodejs.org/) on your computer as well as any other required dependencies for your particular system. It may seem a bit intimidating, but it's actually really easy and only takes a few minutes.
+This is Bevry's supported guide for installing [Node.js](http://nodejs.org/) on your computer as well as any other required dependencies for your particular system. This guide is Bevry's supported guide, as we've found other guides will leave you with an incorrectly configured environment causing permission errors and missing executables that are hard to track down. It may seem a bit intimidating, but it's actually really easy and only takes a few minutes.
 
 
 ## On Linux (Mac OSX, Ubuntu, Fedora, etc)
