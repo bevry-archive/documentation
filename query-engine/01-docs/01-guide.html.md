@@ -254,7 +254,7 @@ A pill takes in an object with the following structure: `prefixes: ['@','usernam
 
 ## Tying it all together
 
-Here are a few examples that tie all of this together. [Be sure to check out the live interactive demo to see these examples in action.](http://bevry.github.com/query-engine/demo/)
+Here are a few examples that tie all of this together. [Be sure to check out the live interactive demo to see these examples in action.](http://bevry.github.io/query-engine/)
 
 ### Find all the models that have the tag "backbone"
 
