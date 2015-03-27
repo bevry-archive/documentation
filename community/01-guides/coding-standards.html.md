@@ -160,7 +160,7 @@ Each function should have an explicit return, if it doesn't then make it chain. 
 
 ## Language Selection
 
-Bevry now uses ES6 for all its projects. CoffeeScript is still used for the DocPad projects. DocPad will eventually migreate to ES6 as well in good time, with modules first, plugins second, and core third.
+Bevry now uses ES6 for all its projects. CoffeeScript is still used for the DocPad projects. In good time, DocPad will also migrate from CoffeeScript to ES6, with modules first, plugins second, and core third.
 
 Bevry uses [Babel](https://babeljs.io) to precompile ES6 to ES5 before publishing. Both the ES6 and ES5 versions of the package will be published. This workflow is automated by our [Bevry Base Files](https://github.com/bevry/base).
 
