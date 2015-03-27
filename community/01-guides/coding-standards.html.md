@@ -176,7 +176,7 @@ Before, our arguments for using CoffeeScript were so:
 - CoffeeScript is easy to learn (can create code in a half a day, master in a week), and avoids these different coding standards and which-library arguments, increasing contributors, effectiveness, effeciency
 - If we were to implement DocPad in JavaScript, we'd still be arguing to this day, which class system we should use
 
-Our reasoning for moving to ES6 from CoffeeScript can be found [in this discussion forum topic](https://discuss.bevry.me/t/move-from-coffeescript-to-es6/30?u=balupton).
+[More information on our move from CoffeeScript to ES6 here.](https://discuss.bevry.me/t/move-from-coffeescript-to-es6/30?u=balupton)
 
 
 ## Semantic Versioning
