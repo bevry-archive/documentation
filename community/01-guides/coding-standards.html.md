@@ -160,19 +160,23 @@ Each function should have an explicit return, if it doesn't then make it chain. 
 
 ## Language Selection
 
-Bevry uses CoffeeScript for all its non-[trivial](https://github.com/bevry/binaryextensions) modules.
+Bevry now uses ES6 for all its projects. CoffeeScript is still used for the DocPad projects. DocPad will eventually migreate to ES6 as well in good time, with modules first, plugins second, and core third.
 
-With the use of Bevry's [base files](https://github.com/bevry/base) it is very easy to bootstrap a new project, and have compilation handled.
+Bevry uses [Babel](https://babeljs.io) to precompile ES6 to ES5 before publishing. Both the ES6 and ES5 versions of the package will be published. This workflow is automated by our [Bevry Base Files](https://github.com/bevry/base).
 
-The biggest complaint we here about the use of CoffeeScript is it reduces contributors. We feel this is an artificial complaint, here's why.
+Before, our arguments for using CoffeeScript were so:
 
-- [Unix Philsophy](http://en.wikipedia.org/wiki/Unix_philosophy): Rule of Generation: Developers should avoid writing code by hand and instead write abstract high-level programs that generate code. This rule aims to reduce humans errors and save time
+> The biggest complaint we here about the use of CoffeeScript is it reduces contributors. We feel this is an artificial complaint, here's why.
+
+> - [Unix Philsophy](http://en.wikipedia.org/wiki/Unix_philosophy): Rule of Generation: Developers should avoid writing code by hand and instead write abstract high-level programs that generate code. This rule aims to reduce humans errors and save time
 - CoffeeScript includes built-in high-level standard ways to do classes, for in loops, for of loops, bindings, etc
 - JavaScript you either write unnecessarily complex code that increases risk of error and decreases code readability and portability, or include a library like underscore, just to do the same things
 - This causes arguments in the JavaScript communities about which libaries to use, which class system to use, which semicolon standard to use, which comma standard to use, etc
 - These arguments add unnecessary noise in the community, that reduce effectiveness, reduce effeciency, and reduces contributors due to the different standards being used than what they are used to
 - CoffeeScript is easy to learn (can create code in a half a day, master in a week), and avoids these different coding standards and which-library arguments, increasing contributors, effectiveness, effeciency
 - If we were to implement DocPad in JavaScript, we'd still be arguing to this day, which class system we should use
+
+Our reasoning for moving to ES6 from CoffeeScript can be found [in this discussion forum topic](https://discuss.bevry.me/t/move-from-coffeescript-to-es6/30?u=balupton).
 
 
 ## Semantic Versioning
