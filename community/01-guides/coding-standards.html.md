@@ -153,9 +153,9 @@ Each function should have an explicit return, if it doesn't then make it chain. 
 
 ## JavaScript
 
-### [JSHint](http://www.jshint.com) [Options](http://www.jshint.com/docs/options/)
+### [ESLint](http://eslint.org)
 
-[Get our `.jshintrc` configuration file](https://github.com/bevry/base/blob/master/.jshintrc)
+[Get our `.eslintrc` configuration file](https://github.com/bevry/base/blob/master/.eslintrc)
 
 
 ## Language Selection
