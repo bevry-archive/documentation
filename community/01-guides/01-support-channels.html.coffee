@@ -7,6 +7,8 @@ h2 "Community Support Channels"
 text """
 	<t:premiumsupport render="markdown">
 	Community Support is provided by people facing the same issues whom team up to help each other during their spare time. Unlike Paid Premium Support, there are no guarantees.
+	
+	> NOTE: We are now redoing our official support channels. For the latest information please refer to the new [Getting Support Guide](https://discuss.bevry.me/t/getting-support-guide/63/1) on our official [Bevry Discussion Forum](https://discuss.bevry.me)
 	</t:premiumsupport>
 	"""
 
