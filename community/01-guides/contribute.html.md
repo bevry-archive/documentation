@@ -52,6 +52,6 @@ DocPad documentation is located at the [`docpad/documentation` repository](https
 
 
 
-## Development
+### Development
 
 Refer to the project's `CONTRIBUTING.md` file for its applicable development instructions. If the file is missing, refer to our [standard `CONTRIBUTING.md` file](https://github.com/bevry/base/blob/master/CONTRIBUTING.md) instead.
