@@ -28,6 +28,10 @@ DocPad users can also:
 - Star the [DocPad NPM Package](https://npmjs.org/package/docpad) by running `npm star docpad` in your terminal
 
 
+### Support
+
+Support is provided through our [Support Channels](https://learn.bevry.me/support). We have some [Support Guidelines](https://learn.bevry.me/community/support-guidelines) and [Chat Guidelines](https://learn.bevry.me/community/chat-guidelines) that contains tips for receiving and providing support.
+
 
 ## Technical Contributions
 
