@@ -32,7 +32,7 @@ DocPad users can also:
 ## Technical Contributions
 
 
-### Coding Standards & Style Guide
+### Formatting
 
 Follow the [Bevry Coding Standards](/community/coding-standards) when writing your changes
 
