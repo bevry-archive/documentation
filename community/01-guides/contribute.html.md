@@ -29,7 +29,7 @@ DocPad users can also:
 
 
 
-## Contributing Code & Documentation
+## Technical Contributions
 
 
 ### Coding Standards & Style Guide
