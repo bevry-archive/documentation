@@ -7,7 +7,7 @@
 
 ### Spelling
 
-USA English should be used within your code. This is because the majority of modules are written in USA English, and it would cause useless inconsitencies in your code if in some places you used `color` and others `colour`.
+USA English should be used within your code. This is because the majority of modules are written in USA English, and it would cause useless inconsistencies in your code if in some places you used `color` and others `colour`.
 
 
 ### Indentation
@@ -168,12 +168,12 @@ Before, our arguments for using CoffeeScript were so:
 
 > The biggest complaint we here about the use of CoffeeScript is it reduces contributors. We feel this is an artificial complaint, here's why.
 
-> - [Unix Philsophy](http://en.wikipedia.org/wiki/Unix_philosophy): Rule of Generation: Developers should avoid writing code by hand and instead write abstract high-level programs that generate code. This rule aims to reduce humans errors and save time
+> - [Unix Philosophy](http://en.wikipedia.org/wiki/Unix_philosophy): Rule of Generation: Developers should avoid writing code by hand and instead write abstract high-level programs that generate code. This rule aims to reduce humans errors and save time
 - CoffeeScript includes built-in high-level standard ways to do classes, for in loops, for of loops, bindings, etc
 - JavaScript you either write unnecessarily complex code that increases risk of error and decreases code readability and portability, or include a library like underscore, just to do the same things
 - This causes arguments in the JavaScript communities about which libaries to use, which class system to use, which semicolon standard to use, which comma standard to use, etc
-- These arguments add unnecessary noise in the community, that reduce effectiveness, reduce effeciency, and reduces contributors due to the different standards being used than what they are used to
-- CoffeeScript is easy to learn (can create code in a half a day, master in a week), and avoids these different coding standards and which-library arguments, increasing contributors, effectiveness, effeciency
+- These arguments add unnecessary noise in the community, that reduce effectiveness, reduce efficiency, and reduces contributors due to the different standards being used than what they are used to
+- CoffeeScript is easy to learn (can create code in a half a day, master in a week), and avoids these different coding standards and which-library arguments, increasing contributors, effectiveness, efficiency
 - If we were to implement DocPad in JavaScript, we'd still be arguing to this day, which class system we should use
 
 [More information on our move from CoffeeScript to ES6 here.](https://discuss.bevry.me/t/move-from-coffeescript-to-es6/30?u=balupton)
@@ -202,16 +202,16 @@ Bevry only publishes modules to the npm registry, avoiding the component and bow
 
 The reasoning for this is that we use to publish to the package managers component and bower, and include support for the module loaders AMD, Require.js, and Global Namespacing (aka none) — but it just become too much to manage and deal with.
 
-The package managers Component and Bower both use git repositories as their registry, meaning that you must bundle the production distribution of your packge with your source files in your git repository. This makes your git repository get quite large, and pollutes the change history. Neither of these package managers, have any stance on which module loader you should use, creating extra complexity.
+The package managers Component and Bower both use git repositories as their registry, meaning that you must bundle the production distribution of your package with your source files in your git repository. This makes your git repository get quite large, and pollutes the change history. Neither of these package managers, have any stance on which module loader you should use, creating extra complexity.
 
-The module loaders AMD, Require.js, and Global Namespacing (aka none), require you to use a [UMD style header definition](https://github.com/docpad/docpad-plugin-umd#usage) in your projects pre-distribution. They also require an impratical amount of tests to be written ensuring your library loads against each one, or you don't write tests, and you get error reports on how it doesn't work under one of the environments you don't use, you push a fix, and it breaks another environment you don't use.
+The module loaders AMD, Require.js, and Global Namespacing (aka none), require you to use a [UMD style header definition](https://github.com/docpad/docpad-plugin-umd#usage) in your projects pre-distribution. They also require an impractical amount of tests to be written ensuring your library loads against each one, or you don't write tests, and you get error reports on how it doesn't work under one of the environments you don't use, you push a fix, and it breaks another environment you don't use.
 
 With the commonjs, npm, browserify, and ender solution. You publish only your production files to the npm registry, not your source files. This has the benefit of not polluting your repository's size and changelogs with production files, but it also means even if GitHub goes down (which happens a bit), you can still install things.
 
-NPM + Browserify offer a lot of control over your packages, and you can even [add UMD headers to them at compile time](http://dontkry.com/posts/code/browserify-and-the-universal-module-definition.html) if you must insist, however UMD misses out on the amazing benefit of the beautiful simplicitly of commonjs. Importing a module is as easy as `require('module-name')` and you never have to worry about version conflicts either (something that component users do have to worry about).
+NPM + Browserify offer a lot of control over your packages, and you can even [add UMD headers to them at compile time](http://dontkry.com/posts/code/browserify-and-the-universal-module-definition.html) if you must insist, however UMD misses out on the amazing benefit of the beautiful simplicity of commonjs. Importing a module is as easy as `require('module-name')` and you never have to worry about version conflicts either (something that component users do have to worry about).
 
 Ender also makes it easy for people who don't need the control (and complexity) of the npm + browserify solution to easily be able to bundle and add libraries together into a production ready build file.
 
-But for those who want the ultimate simplicitly, tools like [wzrd.in](http://wzrd.in) and [requirebin](http://requirebin.com/) allow you to easily just create CDN ready distros of commonjs npm published modules right away, for instant inclusion in your application. Awesome.
+But for those who want the ultimate simplicity, tools like [wzrd.in](http://wzrd.in) and [requirebin](http://requirebin.com/) allow you to easily just create CDN ready distros of commonjs npm published modules right away, for instant inclusion in your application. Awesome.
 
-So for all those reasons, we feel the commonjs utilitly belt of npm, browserify, ender, wzrd.in and requirebin, is the ultimate solution. Whereas solutions like AMD, Require.js, bower and component, just cause headaches.
+So for all those reasons, we feel the commonjs utility belt of npm, browserify, ender, wzrd.in and requirebin, is the ultimate solution. Whereas solutions like AMD, Require.js, bower and component, just cause headaches.
