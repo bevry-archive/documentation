@@ -9,14 +9,22 @@ This is Bevry's supported guide for installing [Node.js](http://nodejs.org/) on 
 
 1. ### Mac OSX Preperation
 
-	1. [Download & Install Git](http://git-scm.com/download)
-
-	2. [Download & Install Xcode](http://developer.apple.com/xcode/)
-
-	3. Install Xcode Command Line Tools:
+	1. Install Command Line Tools:
 
 		``` bash
 		xcode-select --install
+		```
+		
+		Xcode may or may not be necessary for the above command, if it fails, [Download & Install Xcode](http://developer.apple.com/xcode/), and try again.
+	
+	1. [Download & Install Git](http://git-scm.com/download)
+	
+		If you use [homebrew](http://brew.sh), you can run `brew install git` instead of manually installing and downloading git.
+
+	1. Ensure correct permissions are set for `/usr/local`:
+	
+		``` bash
+		sudo chown -R $USER /usr/local
 		```
 
 
@@ -34,41 +42,28 @@ This is Bevry's supported guide for installing [Node.js](http://nodejs.org/) on 
 	```
 
 
-1. ### Install Node.js
+1. ### Install Node.js via [Node Version Manager](https://github.com/creationix/nvm)
 
-	1. #### Via Mac OSX Installer
+	Node Version Manager (NVM) lets you install multiple versions of Node to your local user directory, enabling easy upgrades and version switching, without the permission troubles that are common with non-NVM setups.
+	
+	1. Uninstall any previous Node.js versions you may already have
 
-		1. Uninstall any previous Node.js versions you may already have
+	1. Install NVM by running the following in Terminal:
 
-		1. [Download & Install the Node.js Mac OSX Installer](http://nodejs.org/dist/<%- @nodeVersion %>/node-<%- @nodeVersion %>.pkg)
+		``` bash
+		git clone git://github.com/creationix/nvm.git ~/.nvm
+		printf "\n\n# NVM\nif [ -s ~/.nvm/nvm.sh ]; then\n\tNVM_DIR=~/.nvm\n\tsource ~/.nvm/nvm.sh\nfi" >> ~/.bashrc
+		NVM_DIR=~/.nvm
+		source ~/.nvm/nvm.sh
+		```
 
-		1. Ensure the correct permissions are set by running the following in Terminal:
+	1. Install Node.js by running the following in Terminal:
 
-			``` bash
-			sudo chown -R $USER /usr/local
-			```
-
-	1. #### Via [Node Version Manager](https://github.com/creationix/nvm)
-
-		1. Uninstall any previous Node.js versions you may already have
-
-		1. Install NVM by running the following in Terminal:
-
-			``` bash
-			git clone git://github.com/creationix/nvm.git ~/.nvm
-			printf "\n\n# NVM\nif [ -s ~/.nvm/nvm.sh ]; then\n\tNVM_DIR=~/.nvm\n\tsource ~/.nvm/nvm.sh\nfi" >> ~/.bashrc
-			NVM_DIR=~/.nvm
-			source ~/.nvm/nvm.sh
-			```
-
-		1. Install Node.js by running the following in Terminal:
-
-			``` bash
-			nvm install <%- @nodeVersion %>
-			nvm alias default <%- @nodeMajorMinorVersion %>
-			nvm use <%- @nodeMajorMinorVersion %>
-			```
-
+		``` bash
+		nvm install <%- @nodeVersion %>
+		nvm alias default <%- @nodeMajorMinorVersion %>
+		nvm use <%- @nodeMajorMinorVersion %>
+		```
 
 ## On Windows
 
