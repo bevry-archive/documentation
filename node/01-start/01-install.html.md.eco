@@ -57,12 +57,12 @@ This is Bevry's supported guide for installing [Node.js](http://nodejs.org/) on 
 		source ~/.nvm/nvm.sh
 		```
 
-	1. Install Node.js by running the following in Terminal:
+	1. Install Node by running the following in Terminal:
 
 		``` bash
-		nvm install <%- @nodeVersion %>
-		nvm alias default <%- @nodeMajorMinorVersion %>
-		nvm use <%- @nodeMajorMinorVersion %>
+		nvm install iojs
+		nvm alias default iojs
+		nvm use iojs
 		```
 
 ## On Windows
