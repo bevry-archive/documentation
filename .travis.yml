@@ -30,6 +30,7 @@ script: >
   if [ ! -z $GITHUB_TRAVIS_TOKEN ]; then
     echo "Deploying...";
     travis login --skip-completion-check --org --github-token "$GITHUB_TRAVIS_TOKEN";
+    export TRAVIS_ACCESS_TOKEN=`cat ~/.travis/config.yml | grep access_token | sed 's/ *access_token: *//'`;
     travis restart --debug --skip-completion-check --org -r "$DEPLOY_REPO_SLUG" -t "$TRAVIS_ACCESS_TOKEN";
     echo "Deployed";
   else
