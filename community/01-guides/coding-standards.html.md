@@ -166,7 +166,7 @@ Bevry uses [Babel](https://babeljs.io) to precompile ES6 to ES5 before publishin
 
 Before, our arguments for using CoffeeScript were so:
 
-> The biggest complaint we here about the use of CoffeeScript is it reduces contributors. We feel this is an artificial complaint, here's why.
+> The biggest complaint we hear about the use of CoffeeScript is it reduces contributors. We feel this is an artificial complaint, here's why.
 
 > - [Unix Philosophy](http://en.wikipedia.org/wiki/Unix_philosophy): Rule of Generation: Developers should avoid writing code by hand and instead write abstract high-level programs that generate code. This rule aims to reduce humans errors and save time
 - CoffeeScript includes built-in high-level standard ways to do classes, for in loops, for of loops, bindings, etc
