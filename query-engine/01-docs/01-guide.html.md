@@ -59,7 +59,7 @@ Returns: QueryCollection instance
 Returns a regular expression from the passed string.
 
 ### QueryEngine.createSafeRegex(str)
-Returns a santised regular expression from the passed string.
+Returns a sanitised regular expression from the passed string.
 
 ### QueryEngine.toArray(value)
 Converts value to an array if it isn't one already.
@@ -152,7 +152,7 @@ Will test the model against our collections pill criteria. Returns boolean.
 
 ### Criteria: Queries
 #### queryCollection.setQuery(queryName, queryObject or queryClassInstance)
-Applies a query indentified by the queryName to the current collection.
+Applies a query identified by the queryName to the current collection.
 #### queryCollection.setQueries(queries)
 #### queryCollection.getQuery(queryName)
 #### queryCollection.getQueries()
@@ -160,7 +160,7 @@ Applies a query indentified by the queryName to the current collection.
 
 ### Criteria: Filters
 #### queryCollection.setFilter(filterName, filterFunction)
-Applies a filter indentified by the filterName for the current collection. A filter is just a standard function which takes in two arguments `model` and `cleanedSearchString`. Returns chain.
+Applies a filter identified by the filterName for the current collection. A filter is just a standard function which takes in two arguments `model` and `cleanedSearchString`. Returns chain.
 
 #### queryCollection.setFilters(filters)
 Sets the filters for the current collection. Filters are an object indexed by the filter names, and valued by the filter functions. Returns chain.
@@ -202,10 +202,10 @@ If we use a regular expression as a value in a query, then Query Engine will tes
 We can also support advanced operations on queries by passing an object as the selector's value. Here is what is available to us in that department.
 
 #### $beginsWith (aka $startsWith)
-You can use $beginsWith to find out if the atribute's value, starts with our selector's value. For instance, to get all the people who's firstname starts with the letter B, we would use the query: `firstname: $startsWith: ['B','b']`, or to just get names that start with a capital B, we can just use `firstname: $startsWith: 'B'`
+You can use $beginsWith to find out if the attribute's value, starts with our selector's value. For instance, to get all the people who's firstname starts with the letter B, we would use the query: `firstname: $startsWith: ['B','b']`, or to just get names that start with a capital B, we can just use `firstname: $startsWith: 'B'`
 
 #### $endsWith (aka $finishesWith)
-You can use $endsWith to find out if the atribute's value, ends with our selector's value. For instance, to get all the people who's firstname ends with the letter N, we would use the query: `firstname: $endsWith: ['N','n']`, or to just get names that end with a lowercase N, we can just use `firstname: $endsWith: 'n'`
+You can use $endsWith to find out if the attribute's value, ends with our selector's value. For instance, to get all the people who's firstname ends with the letter N, we would use the query: `firstname: $endsWith: ['N','n']`, or to just get names that end with a lowercase N, we can just use `firstname: $endsWith: 'n'`
 
 #### $all
 The `$all` operator is similar to `$in`, but instead of matching any value in the specified array all values in the array must be matched
