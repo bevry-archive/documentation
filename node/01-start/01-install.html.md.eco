@@ -42,11 +42,11 @@ This is Bevry's supported guide for installing [Node.js](http://nodejs.org/) on 
 	```
 
 
-1. ### Install Node via [Node Version Manager](https://github.com/creationix/nvm)
+1. ### Install Node.js via [Node Version Manager](https://github.com/creationix/nvm)
 
-	Node Version Manager (NVM) lets you install multiple versions of Node to your local user directory, enabling easy upgrades and version switching, without the permission troubles that are common with non-NVM setups.
+	Node Version Manager (NVM) lets you install multiple versions of Node.js to your local user directory, enabling easy upgrades and version switching, without the permission troubles that are common with non-NVM setups.
 	
-	1. Uninstall any previous Node versions you may already have
+	1. Uninstall any previous Node.js versions you may already have
 
 	1. Install NVM by running the following in Terminal:
 
@@ -57,12 +57,12 @@ This is Bevry's supported guide for installing [Node.js](http://nodejs.org/) on 
 		source ~/.nvm/nvm.sh
 		```
 
-	1. Install Node by running the following in Terminal:
+	1. Install Node.js by running the following in Terminal:
 
 		``` bash
-		nvm install iojs
-		nvm alias default iojs
-		nvm use iojs
+		nvm install node
+		nvm alias default node
+		nvm use node
 		```
 
 ## On Windows
