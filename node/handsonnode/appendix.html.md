@@ -63,7 +63,7 @@ Liked this training? Sign up to the newsletter to be notified of more like it:
 	- [YAML.js](https://github.com/jeremyfa/yaml.js)
 
 - Utilities
-	- [Underscore](http://underscorejs.org/)
+	- [Lodash](https://lodash.com)
 	- [SafePS](https://github.com/bevry/safeps)
 	- [SafeFS](https://github.com/bevry/safefs)
 	- [Eachr](https://github.com/bevry/eachr)
