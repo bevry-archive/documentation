@@ -28,14 +28,11 @@ Liked this training? Sign up to the newsletter to be notified of more like it:
 
 ### Further Learning
 
-- [Node School](http://nodeschool.io)
+- [Node School](http://nodeschool.io) - [balupton's answers](https://github.com/balupton/nodeschools) (don't cheat)
 - [Exception Handling in Node](http://stackoverflow.com/a/7313005/130638)
 - [Debugging & Profiling Node.js](http://stackoverflow.com/a/16512303/130638)
-
-### Other
-
-- [NodeCopter](http://nodecopter.com/) - flying robots and node.js
-- [Session Middlewares](http://stackoverflow.com/a/13049549/130638)
+- [Comprehensive Node.js Training](https://gist.github.com/balupton/8d5dda4cd1c72490cdc354e00d528a9e)
+- [Node Fail Safe](https://github.com/bevry/nodefailsafe)
 
 ### Recommended Modules
 
@@ -59,6 +56,7 @@ Liked this training? Sign up to the newsletter to be notified of more like it:
 - Servers
 	- [Connect](http://www.senchalabs.org/connect/)
 	- [Express](http://expressjs.com)
+	- [Session Middlewares](http://stackoverflow.com/a/13049549/130638)
 
 - Configuration Files
 	- [CSON](https://github.com/bevry/cson)
@@ -76,3 +74,6 @@ Liked this training? Sign up to the newsletter to be notified of more like it:
 - CLI
 	- [Caterpillar](https://github.com/bevry/caterpillar)
 	- [Commander.js](https://github.com/visionmedia/commander.js/)
+
+- Robotics
+	- [NodeCopter](http://nodecopter.com/)
