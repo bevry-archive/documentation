@@ -25,4 +25,4 @@ if ( $one === false || $two === false ) {
 }
 
 # Example 4
-# ... o_O ...
+# Not possible in PHP
