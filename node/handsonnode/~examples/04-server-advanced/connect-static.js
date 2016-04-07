@@ -1,14 +1,10 @@
 // Requires
 var connect = require('connect')
-
-// Configuration
-var appConfig = {
-	staticPath:  __dirname
-}
+var config = require('./config')
 
 // Server
 var app = connect()
-	.use(connect.static(appConfig.staticPath))
+	.use(connect.static(config.staticPath))
 	.use(function (req, res, next) {
 		res.statusCode = 404
 		res.end('404 Not Found. Sorry.\n')

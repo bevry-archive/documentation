@@ -4,12 +4,12 @@ var fsUtil = require('fs')
 var pathUtil = require('path')
 var config = require('./config')
 
-// Serve the file system over a server
-function serveFileSystem (req, res, next) {
+// Server
+httpUtil.createServer(function (req, res) {
 	var query = require('querystring').parse(require('url').parse(url).query)
 	// /?action=read&file=static-server.js
 	if ( query.action === 'read' ) {
-		var path = pathUtil.join(config.staticPath, query.file || '')  // not secure
+		var path = pathUtil.join(appConfig.staticPath, query.file || '')  // not secure
 		fsUtil.stat(path, function (error, stat) {
 			if ( error ) {
 				console.log('Warning:', error.stack)
@@ -37,14 +37,7 @@ function serveFileSystem (req, res, next) {
 		})
 	}
 	else {
-		next()
-	}
-}
-
-// Server
-httpUtil.createServer(function (req, res) {
-	serveFileSystem(req, res, function () {
 		res.statusCode = 400
 		return res.end('400 Bad Request')
-	))
+	}
 }).listen(8000)

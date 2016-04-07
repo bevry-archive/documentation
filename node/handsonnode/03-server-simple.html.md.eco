@@ -31,7 +31,16 @@ Talk with it: `nc localhost 8000`
 Talk with it: `nc localhost 8000`
 
 
-## Chat Server with Extras
+## Supplemental
+
+### Echo Server with Transform Stream
+
+<%- @codeFile('./~examples/03-server-simple/server-echo-transform.js') %>
+
+Talk with it: `nc localhost 8000`
+
+
+### Chat Server with Extras
 
 <%- @codeFile('./~examples/03-server-simple/server-chat-extra.js') %>
 

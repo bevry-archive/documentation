@@ -1,16 +1,12 @@
 // Requires
 var express = require('express')
-
-// Configuration
-var appConfig = {
-	staticPath:  __dirname
-}
+var config = require('./config')
 
 // Application
 var app = express()
 
 // Middlewares
-app.use(express.static(appConfig.staticPath))
+app.use(express.static(config.staticPath))
 app.use(function (req, res, next) {
 	res.send(404, '404 Not Found. Sorry.\n')
 })

@@ -1,36 +1,48 @@
 // Requires
 var httpUtil = require('http')
 var fsUtil = require('fs')
-var urlUtil = require('url')
+var pathUtil = require('path')
+var config = require('./config')
 
-// Configuration
-var appConfig = {
-	staticPath:  __dirname
-}
+// Serve the file system over a server
+function serveFileSystem (req, res) {
+	var query = require('querystring').parse(require('url').parse(url).query)
+	// /?action=read&file=static-server.js
+	if ( query.action === 'read' ) {
+		var path = pathUtil.join(config.staticPath, query.file || '')  // not secure
+		fsUtil.stat(path, function (error, stat) {
+			if ( error ) {
+				console.log('Warning:', error.stack)
+				res.statusCode = 404
+				return res.end('404 Not Found')
+			}
 
-// Handlers
-var handleFiles = function(req,res){
-	var url = urlUtil.parse(req.url)
-	var path = appConfig.staticPath + url.pathname  // definitely not secure
-
-	// Check if path exists
-	fsUtil.exists(path, function (exists) {
-		// If it does, read that file
-		if ( exists ) {
-			fsUtil.readFile(path, function (err, data) {
-				if (err)  throw err
-				res.end(data)
-			})
-		}
-		// Otherwise return 404
-		else {
-			res.statusCode = 404
-			res.end('404 Not Found. Sorry.\n')
-		}
-	})
+			if ( stat.isDirectory() ) {
+				fsUtil.readdir(path, function (error, files) {
+					if ( error ) {
+						console.log('Warning:', error.stack)
+						res.statusCode = 500
+						return res.end('500 Internal Server Error')
+					}
+					return res.end(files.join('\n'))
+				})
+			}
+			else {
+				fsUtil.createReadStream(path).pipe(res).on('error', function (error) {
+					console.log('Warning:', error.stack)
+					res.statusCode = 500
+					return res.end('500 Internal Server Error')
+				})
+			}
+		})
+	}
+	else {
+		res.statusCode = 400
+		return res.end('400 Bad Request')
+	}
 }
 
 // Server
 httpUtil.createServer(function (req, res) {
-	handleFiles(req, res)
-}).listen(8000, '127.0.0.1')
+	serveFileSystem(req, res)
+}).listen(8000)
