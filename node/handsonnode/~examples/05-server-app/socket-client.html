@@ -7,11 +7,11 @@
 	<!-- Scripts -->
 	<script src="/socket.io/socket.io.js"></script>
 	<script>
-		var socket = io.connect(document.location.protocol+'//'+document.location.host);
+		var socket = io.connect(document.location.protocol+'//'+document.location.host)
 		socket.on('news', function (data) {
-			console.log(data);
-			socket.emit('my other event', { my: 'data' });
-		});
+			console.log(data)
+			socket.emit('my other event', { my: 'data' })
+		})
 	</script>
 </body>
 </html>

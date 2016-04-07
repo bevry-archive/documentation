@@ -1,13 +1,13 @@
 // Requires
-var express = require('express');
+var express = require('express')
 
 // Application
-var app = express();
+var app = express()
 
 // Routes
-app.get('/', function(req, res){
-  res.send('hello world');
-});
+app.get('/', function (req, res) {
+  res.send('hello world')
+})
 
 // Server
-var server = app.listen(8000);
+var server = app.listen(8000)
