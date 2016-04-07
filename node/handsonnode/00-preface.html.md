@@ -16,8 +16,9 @@ At the end of the class, students will have gained a grasp on node's ecosystem a
 ### Required class materials / software
 
 - Bring a laptop (any operating system that has a command line and a web browser is fine - e.g. Mac OSX, Windows, and Ubuntu)
-- Have your system's build dependencies installed, as well as git and node v0.8. Need help? [Guide here.](http://bevry.me/docs/installnode)
-- Source code editor installed (Sublime text is recommended)
+- Have your system's build dependencies installed, as well as git and node. Need help? [Guide here.](/node/install)
+- Source code editor installed ([Atom](https://atom.io) is what I use)
 
 ### Presenter
-[Benjamin Lupton](http://balupton.com/) is the founder of [Bevry](http://bevry.me), a Sydney based company dedicated to empowering developers everywhere. His javascript and node projects are some of the most popular in the world, even 37Signals and Microsoft uses them. Besides work, he drives his family nuts with questions of life.
+
+[Benjamin Lupton](http://balupton.com/) is the founder of [Bevry](http://bevry.me), an open-company and community dedicated to empowering developers everywhere. He has worked in web devleopment since 2005, and specialised in JavaScript since 2009. He has created over 200 open-source JavaScript projects, which have been used in some of the world's biggest web-sites/apps (Basecamp, Spotify, Ustream) and by some of the world's biggest companies (Microsoft, Adobe, GitHub, Atlassian).
