@@ -29,6 +29,7 @@ Liked this training? Sign up to the newsletter to be notified of more like it:
 ### Further Learning
 
 - [Node School](http://nodeschool.io) - [balupton's answers](https://github.com/balupton/nodeschools) (don't cheat)
+- [Joyent's Guides](https://www.joyent.com/developers/node)
 - [Exception Handling in Node](http://stackoverflow.com/a/7313005/130638)
 - [Debugging & Profiling Node.js](http://stackoverflow.com/a/16512303/130638)
 - [Comprehensive Node.js Training](https://gist.github.com/balupton/8d5dda4cd1c72490cdc354e00d528a9e)
@@ -73,7 +74,7 @@ Liked this training? Sign up to the newsletter to be notified of more like it:
 
 - CLI
 	- [Caterpillar](https://github.com/bevry/caterpillar)
-	- [Commander.js](https://github.com/visionmedia/commander.js/)
+	- [Vorpal](http://vorpal.js.org)
 
 - Robotics
 	- [NodeCopter](http://nodecopter.com/)
