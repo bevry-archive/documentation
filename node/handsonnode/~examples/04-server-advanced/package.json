@@ -1,0 +1,10 @@
+{
+  "name": "04-server-advanced",
+  "version": "1.0.0",
+  "dependencies": {
+    "connect": "^3.4.1",
+    "express": "^4.13.4",
+    "serve-index": "^1.7.3",
+    "serve-static": "^1.10.2"
+  }
+}

@@ -2,14 +2,24 @@
 var httpUtil = require('http')
 var fsUtil = require('fs')
 var pathUtil = require('path')
+var urlUtil = require('url')
 var config = require('./config')
+
+// @TODO
+// This is getting a bit big, how can we refactor this?
+// Can we abstract it out?
+// What considerations do we need to take into account?
+// How would we add additional actions if we abstract?
 
 // Server
 httpUtil.createServer(function (req, res) {
-	var query = require('querystring').parse(require('url').parse(url).query)
-	// /?action=read&file=static-server.js
-	if ( query.action === 'read' ) {
-		var path = pathUtil.join(appConfig.staticPath, query.file || '')  // not secure
+	var file = urlUtil.parse(req.url).pathname
+	var path = pathUtil.join(config.staticPath, file)
+	fsUtil.exists(path, function (exists) {
+		if ( !exists ) {
+			res.statusCode = 404
+			return res.end('404 File Not Found')
+		}
 		fsUtil.stat(path, function (error, stat) {
 			if ( error ) {
 				console.log('Warning:', error.stack)
@@ -35,9 +45,5 @@ httpUtil.createServer(function (req, res) {
 				})
 			}
 		})
-	}
-	else {
-		res.statusCode = 400
-		return res.end('400 Bad Request')
-	}
+	})
 }).listen(8000)

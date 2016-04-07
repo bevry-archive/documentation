@@ -1,20 +1,23 @@
 // Requires
-var httpUtil = require('http')
 var fsUtil = require('fs')
 var pathUtil = require('path')
-var config = require('./config')
+var urlUtil = require('url')
 
-// Serve the file system over a server
-function serveFileSystem (req, res, next) {
-	var query = require('querystring').parse(require('url').parse(url).query)
-	// /?action=read&file=static-server.js
-	if ( query.action === 'read' ) {
-		var path = pathUtil.join(config.staticPath, query.file || '')  // not secure
+// Serve static
+module.exports = function (root, req, res, next) {
+	var file = urlUtil.parse(req.url).pathname
+	var path = pathUtil.join(root, file)
+	fsUtil.exists(path, function (exists) {
+		if ( !exists ) {
+			if ( next )  return next()
+			res.statusCode = 404
+			return res.end('404 File Not Found')
+		}
 		fsUtil.stat(path, function (error, stat) {
 			if ( error ) {
 				console.log('Warning:', error.stack)
-				res.statusCode = 404
-				return res.end('404 Not Found')
+				res.statusCode = 500
+				return res.end('500 Internal Server Error')
 			}
 
 			if ( stat.isDirectory() ) {
@@ -35,16 +38,5 @@ function serveFileSystem (req, res, next) {
 				})
 			}
 		})
-	}
-	else {
-		next()
-	}
+	})
 }
-
-// Server
-httpUtil.createServer(function (req, res) {
-	serveFileSystem(req, res, function () {
-		res.statusCode = 400
-		return res.end('400 Bad Request')
-	))
-}).listen(8000)
