@@ -5,13 +5,21 @@
 </head>
 <body>
 	<!-- Scripts -->
-	<script src="/socket.io/socket.io.js"></script>
+	<script src="/primus/primus.js"></script>
 	<script>
-		var socket = io.connect(document.location.protocol+'//'+document.location.host)
-		socket.on('news', function (data) {
-			console.log(data)
-			socket.emit('my other event', { my: 'data' })
+		// Tell primus to create a new connect to the current domain/port/protocol
+		var primus = new Primus()
+
+		// Ask for a response if we receive data
+		primus.on('data', function (message) {
+			alert(message)
+			var response = prompt('What would you like to say?')
+			if ( response ) {
+				primus.write(response)
+				alert('Sent')
+			}
 		})
 	</script>
+	Hello.
 </body>
 </html>

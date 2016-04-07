@@ -22,38 +22,39 @@
 	</div>
 
 	<!-- Scripts -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script src="/socket.io/socket.io.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+	<script src="/primus/primus.js"></script>
 	<script>
-		// IO
-		var socket = io.connect(document.location.protocol + '//' + document.location.host)
+		// Tell primus to create a new connect to the current domain/port/protocol
+		var primus = new Primus()
 
 		// Ready
 		$(function(){
 			// Fetch
 			var $app = $('.app')
 			var $messages = $app.find('.messages')
-			var $messageInput = $app.find('.messageInput').removeAttr('disabled').focus()
+			var $messageInput = $app.find('.messageInput')
 
-			// Receive Message
-			socket.on('message', function (message) {
-				console.log('received message:', message)
+			// Enable input once connection is open
+			primus.on('open', function () {
+				$messageInput.removeAttr('disabled').focus()
+			})
+
+			// Receive message
+			primus.on('data', function (message) {
 				$message = $('<li>', {
 					'class': 'message',
-					text: message.text
+					text: message
 				})
 				$messages.append($message)
 			})
 
-			// Send Message
+			// Send message
 			$messageInput.on('keypress', function (event) {
-				if ( event.keyCode === 13 ) { // enter
-					var message = {
-						text: $messageInput.val().trim()
-					}
-					console.log('send message:', message)
-					socket.emit('message',message)
-					$messageInput.val('') // clear input
+				if ( event.keyCode === 13 ) {  // enter
+					var message = $messageInput.val().trim()
+					primus.write(message)
+					$messageInput.val('')  // clear input
 				}
 			})
 		})

@@ -1,0 +1,9 @@
+{
+  "name": "05-server-app",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.13.4",
+    "primus": "^5.0.1",
+    "ws": "^1.0.1"
+  }
+}

@@ -1,29 +1,35 @@
 // Requires
 var express = require('express')
-var socketio = require('socket.io')
-
-// Configuration
-var appConfig = {
-	staticPath:  __dirname // __dirname+'/static'
-}
+var primus = require('primus')
+var pathUtil = require('path')
 
 // Application
-var app = express()
+var app = require('express')()
 var server = require('http').createServer(app)
-var io = socketio.listen(server)
+var primus = new require('primus')(server, { transformer: 'websockets' })
 
 // Middlewares
-app.use(express.static(appConfig.staticPath))
-app.use(function (req, res, next) {
-	res.send(404, '404 Not Found. Sorry.\n')
+app.get('/', function (req, res) {
+	require('fs').createReadStream(pathUtil.join(__dirname, 'chat-client.html')).pipe(res)
+})
+app.use(function (req, res) {
+	res.status(404).send('404 Not Found. 🙁 \n')
 })
 
 // Socket
-io.sockets.on('connection', function (socket) {
-	socket.on('message', function (message) {
-		console.log('received message:', message)
-		io.sockets.emit('message', message)
+primus.on('connection', function (spark) {
+	console.log('connection has the following headers', spark.headers);
+	console.log('connection was made from', spark.address);
+	console.log('connection id', spark.id);
+
+	// Receive messages
+	spark.on('data', function (message) {
+		// Broadcast them back to everyone
+		primus.write('user ' + spark.id + ' sends ' + message.toString())
 	})
+
+	// Send an initial hello
+	spark.write('Hello user ' + spark.id + '. I am the server communicating to you.')
 })
 
 // Listen
