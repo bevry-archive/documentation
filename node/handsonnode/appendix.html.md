@@ -1,6 +1,6 @@
 ## Thank you
 
-This class was originally run on October 31st, 2012 with [General Assembly](http://generalassemb.ly/). If you attended this class, [rate it here](http://speakerrate.com/talks/18041-hands-on-node-js).
+This class was originally run on October 31st, 2012 with [General Assembly](http://generalassemb.ly/). In April 2016, it received a moderate update.
 
 Follow [Benjamin Lupton](http://balupton.com) on [Twitter](http://twitter.com/balupton) and [GitHub](https://github.com/balupton).
 
@@ -26,14 +26,16 @@ Liked this training? Sign up to the newsletter to be notified of more like it:
 - [Evented Ruby vs Node.js by Jerry Cheung](http://www.youtube.com/watch?v=jo_B4LTHi3I) - good comparison about how node and ruby's approach to asynchrony differs
 - [Programming Style and Your Brain](http://www.youtube.com/watch?v=prAwkQt3ARg) - on how error prevention is better than cleverness (the reason why I love CoffeeScript for the most part but hate CoffeeScript's implicit returns)
 
+### Further Learning
 
-### Nifties
-
-- [NodeCopter](http://nodecopter.com/) - flying robots and node.js
-- [Session Middlewares](http://stackoverflow.com/a/13049549/130638)
+- [Node School](http://nodeschool.io)
 - [Exception Handling in Node](http://stackoverflow.com/a/7313005/130638)
 - [Debugging & Profiling Node.js](http://stackoverflow.com/a/16512303/130638)
 
+### Other
+
+- [NodeCopter](http://nodecopter.com/) - flying robots and node.js
+- [Session Middlewares](http://stackoverflow.com/a/13049549/130638)
 
 ### Recommended Modules
 
@@ -49,7 +51,6 @@ Liked this training? Sign up to the newsletter to be notified of more like it:
 	- [QueryEngine](https://github.com/bevry/query-engine/)
 
 - Templating
-	- [DocPad](http://docpad.org)
 	- [ECO](https://github.com/sstephenson/eco) to HTML
 	- [Stylus](http://learnboost.github.com/stylus/) to CSS
 	- [CoffeeScript](http://coffeescript.org/) to JavaScript
