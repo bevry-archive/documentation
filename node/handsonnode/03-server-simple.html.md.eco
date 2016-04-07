@@ -14,7 +14,7 @@ Test it: `curl http://localhost:8000`
 
 <%- @codeFile('./~examples/03-server-simple/server-pause.js') %>
 
-Bench it: `ab -n 100 -c 100 http://localhost:8000/`
+Bench it: `ab -n 100 -c 100 http://localhost:8000`
 
 
 ## Echo Server
@@ -27,5 +27,12 @@ Talk with it: `nc localhost 8000`
 ## Chat Server
 
 <%- @codeFile('./~examples/03-server-simple/server-chat.js') %>
+
+Talk with it: `nc localhost 8000`
+
+
+## Chat Server with Extras
+
+<%- @codeFile('./~examples/03-server-simple/server-chat-extra.js') %>
 
 Talk with it: `nc localhost 8000`

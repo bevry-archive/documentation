@@ -3,7 +3,7 @@ var express = require('express')
 
 // Configuration
 var appConfig = {
-	staticPath:  __dirname  // __dirname+'/static'
+	staticPath:  __dirname
 }
 
 // Application

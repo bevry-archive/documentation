@@ -1,31 +1,24 @@
 // Requires
 var httpUtil = require('http')
 var fsUtil = require('fs')
-var urlUtil = require('url')
+var pathUtil = require('path')
 
 // Configuration
 var appConfig = {
-	staticPath:  __dirname  // __dirname+'/static'
+	staticPath:  __dirname
 }
 
 // Server
 httpUtil.createServer(function (req, res) {
-	var url = urlUtil.parse(req.url)
-	var path = appConfig.staticPath + url.pathname  // definitely not secure
-
-	// Check if path exists
-	fsUtil.exists(path, function (exists) {
-		// If it does, read that file
-		if ( exists ) {
-			fsUtil.readFile(path, function (err, data) {
-				if (err)  throw err
-				res.end(data)
-			})
+	var path = pathUtil.join(appConfig.staticPath, req.url)
+	fsUtil.readFile(req.url, function (error, data) {
+		if ( error ) {
+			console.log('Warning:', error.stack)
+			res.statusCode = 400
+			return res.end('400 Bad Request')
 		}
-		// Otherwise return 404
 		else {
-			res.statusCode = 404
-			res.end('404 Not Found. Sorry.\n')
+			return res.end(data)
 		}
 	})
 }).listen(8000, '127.0.0.1')

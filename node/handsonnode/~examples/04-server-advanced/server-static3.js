@@ -5,7 +5,7 @@ var urlUtil = require('url')
 
 // Configuration
 var appConfig = {
-	staticPath:  __dirname  // __dirname+'/static'
+	staticPath:  __dirname
 }
 
 // Handlers

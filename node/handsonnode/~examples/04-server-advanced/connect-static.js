@@ -3,7 +3,7 @@ var connect = require('connect')
 
 // Configuration
 var appConfig = {
-	staticPath:  __dirname  // __dirname+'/static'
+	staticPath:  __dirname
 }
 
 // Server

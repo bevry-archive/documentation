@@ -5,4 +5,4 @@ http.createServer(function (req, res) {
 	setTimeout(function(){
 		res.end('world\n')
 	}, 2000)
-}).listen(8000, '127.0.0.1')
+}).listen(8000)
