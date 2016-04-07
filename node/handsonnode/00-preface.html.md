@@ -1,9 +1,14 @@
+
+## Recording
+
+An earlier edition of this training has been recorded in 2012.
+
 <iframe width="640" height="360" src="http://www.youtube.com/embed/_l96hPlqzcI?list=PLYVl5EnzwqsQs0tBLO6ug6WbqAbrpVbNf" frameborder="0" allowfullscreen></iframe>
 
 
 ## Introduction
 
-[Node.js](http://nodejs.org/) is an exciting new platform for building web applications in JavaScript. With its unique I/O model, it excels at the sort of scalable and real-time situations we are increasingly demanding of our servers. The ability to use JavaScript for both the client and server opens up many possibilities for code sharing, expertise reuse, and rapid development. The class is intended for anyone looking to explore the capabilities of the Node.js development platform.
+[Node.js](http://nodejs.org/) is an exciting platform for building web applications in JavaScript. With its unique I/O model, it excels at the sort of scalable and real-time situations we are increasingly demanding of our servers. The ability to use JavaScript for both the client and server opens up many possibilities for code sharing, expertise reuse, and rapid development. The class is intended for anyone looking to explore the capabilities of the Node.js development platform.
 
 At the end of the class, students will have gained a grasp on node's ecosystem and paradigms, be able to write node modules that they can publish and share, and will have experimented with writing realtime web applications.
 
