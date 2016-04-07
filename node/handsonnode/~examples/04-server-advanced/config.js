@@ -1,3 +1,3 @@
 module.exports = {
-	staticPath: process.cwd()
+	staticPath: __dirname  // process.pwd()
 }

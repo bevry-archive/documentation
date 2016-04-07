@@ -3,40 +3,54 @@ title: Node's Ecosystem
 ```
 
 ## Core
-Node was created by [Ryan Dahl](https://github.com/ry). It is now owned and operated by [Joyent](http://joyent.com/). Node is open-source and [located on github](http://github.com/joyent/node) - anyone can play a part in shaping its future.
+
+Node was created by [Ryan Dahl](https://github.com/ry).
+Then it was maintained by [Joyent](http://joyent.com/).
+Now it is maintained by the [Node.js Foundation](https://nodejs.org/en/foundation/).
+Node is open-source and [located on github](http://github.com/nodejs/node). [Anyone can contribute to shape its future.](https://nodejs.org/en/get-involved/)
 
 The mission of the core is to be as lightweight as possible. If a module can do something, then it won't make it into the core.
 
 
 ## Programs
+
 Executing node code is as easy as running `node your-node-file`. To make use of other modules, you will want to write a `package.json` file in the root directory of your program. This file is used to define your application, including information such as its name, description, environments it can run under, and any modules it is dependent on. If you decide to publish your program to the world (making it a module others can use) then you will require a `package.json` file.
 
 A typical `package.json` will look like this:
 
 <%- @codeFile('./~examples/02-ecosystem/package.json') %>
 
-A lot is defined here; [the best way to discover their meanings is by referring to specification on the npmjs website.](https://npmjs.org/doc/json.html)
+A lot is defined here; [the best way to discover their meanings is by referring to specification on the npmjs website.](https://docs.npmjs.com/files/package.json)
 
 > If you are writing a program that you never want to be released to the outside world, you will want to add `"private": true` as well. This will tell npm to never publish your program even if someone accidentally runs `npm publish`.
 
 
 ## Modules
-Modules are just like programs, except the author has decided to publish them to the world using [npm](https://npmjs.org/) - whose website includes a directory of all the published modules for you surf and discover.
+
+Modules are just like programs, except the author has decided to publish them to the world using [npm](https://npmjs.com) - whose website includes a directory of all the published modules for you surf and discover.
 
 - To publish your program as a module, run `npm publish` in your program's directory
 - To use a module in your program, you first install it to your program using `npm install <module-name>`, then you can use it in your code by doing `var theModule = require('module-name');`
 - To install a module globally (so you can utilise its executables if it has any) you will use `npm install -g <module-name>`
 
-Modules will generally abide by [semantic versioning rules](http://semver.org/) so if you want to ensure your program will continue to get bug fixes but not anything that could be a breaking change, then you'll want to define the dependency like so: `"some-dependency": "1.0.x"` where the `x` indicates we are willing to accept versions where the `x` has changed, but nothing else must change.
+Modules will generally abide by [semantic versioning rules](http://semver.org/), npm also supports semver ranges, this allows you to increase compatability by doing:
+
+1. `{ "dependencies": {"some-dependency": "~1.2.3"} }` which will accepted all v1.2 versions of that dependency that are v1.2.3 or higher
+
+1. `{ "dependencies": {"some-dependency": "^1.2.3"} }` which will accepted all v1 versions of that dependency that are v1.2.3 or higher
+
+Both of these are better than just doing `"1.2.3"` directly, as it decreases maintenance when new versions come out which are often compatible depending on the module authors practices.
+
+Never specify a range that has no upper limit, such as `>=1` or `*` as soon enough, the module will publish a breaking change that will break your app. Hence why semver exists.
+
+If you are building a mission critical app, you can use [shrinkwrap](https://docs.npmjs.com/cli/shrinkwrap) and/or [bundled dependencies](https://docs.npmjs.com/files/package.json#bundleddependencies) to help guarantee stability, even while using version ranges.
 
 
 ## Discovering Modules
 
-You can find an unreliable listing of a bunch of categorised modules on [Node's Modules Wiki Page](https://github.com/joyent/node/wiki/modules) which is cool for discovering what is around and possible. However if you know what you're after, you're better off doing a search on the [npm website](https://npmjs.org/). Be aware that node changes quickly, so make sure that the module you're using has tests, and supports your node version - otherwise things get risky.
+The [npm website](https://npmjs.org/) is the best place for discovering all the modules. Good modules generally have:
 
+1. Modules that already use it (called dependents) - found on the npm website in the right sidebar
+2. Tests that guarantee it runs well — found in the source code repository of the module
 
-## Caution
-
-If you ever specify a dependency version without any upper limit (e.g. `>= 1.0.0` or `*`) then it's only a matter of time until that dependency gets a backwards incompatible update and your entire program breaks. Never do this, always follow the earlier advice or specify exact versions.
-
-If you bundle a dependency using `bundledDependencies` and it includes native code (c code that is compiled) then your program will break on different operating system architectures. Be aware.
+Earlier than 2014, "last update" was also a factor to judge, however since 2015, node.js has minimised breaking changes allowing small modules that do a few things well to go unchanged over the years while continuing to work splendidly.
