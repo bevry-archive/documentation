@@ -32,7 +32,7 @@ Liked this training? Sign up to the newsletter to be notified of more like it:
 - [NodeCopter](http://nodecopter.com/) - flying robots and node.js
 - [Session Middlewares](http://stackoverflow.com/a/13049549/130638)
 - [Exception Handling in Node](http://stackoverflow.com/a/7313005/130638)
-- [Debugging & Profiling Node.js](https://gist.github.com/3944017)
+- [Debugging & Profiling Node.js](http://stackoverflow.com/a/16512303/130638)
 
 
 ### Recommended Modules
@@ -50,14 +50,14 @@ Liked this training? Sign up to the newsletter to be notified of more like it:
 
 - Templating
 	- [DocPad](http://docpad.org)
-	- [CoffeeKup](http://coffeekup.org/) to HTML
 	- [ECO](https://github.com/sstephenson/eco) to HTML
 	- [Stylus](http://learnboost.github.com/stylus/) to CSS
 	- [CoffeeScript](http://coffeescript.org/) to JavaScript
+	- [Babel](https://babeljs.io) for ESNext to ES2015
 
 - Servers
 	- [Connect](http://www.senchalabs.org/connect/)
-	- [Express](http://expressjs.com/)
+	- [Express](http://expressjs.com)
 
 - Configuration Files
 	- [CSON](https://github.com/bevry/cson)

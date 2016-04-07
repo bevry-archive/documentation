@@ -13,7 +13,7 @@ Executing node code is as easy as running `node your-node-file`. To make use of 
 
 A typical `package.json` will look like this:
 
-<%- @codeFile('./~examples/package.json') %>
+<%- @codeFile('./~examples/02-ecosystem/package.json') %>
 
 A lot is defined here; [the best way to discover their meanings is by referring to specification on the npmjs website.](https://npmjs.org/doc/json.html)
 
@@ -40,4 +40,3 @@ You can find an unreliable listing of a bunch of categorised modules on [Node's 
 If you ever specify a dependency version without any upper limit (e.g. `>= 1.0.0` or `*`) then it's only a matter of time until that dependency gets a backwards incompatible update and your entire program breaks. Never do this, always follow the earlier advice or specify exact versions.
 
 If you bundle a dependency using `bundledDependencies` and it includes native code (c code that is compiled) then your program will break on different operating system architectures. Be aware.
-

@@ -11,18 +11,18 @@ To do this, we will use the module [Socket.io](http://socket.io/) by [LearnBoost
 
 Adding Socket.io to our previous Express Static File Server will look like this:
 
-<%- @codeFile('./~examples/socket-server.js') %>
+<%- @codeFile('./~examples/05-server-app/socket-server.js') %>
 
-<%- @codeFile('./~examples/socket-client.html') %>
+<%- @codeFile('./~examples/05-server-app/socket-client.html') %>
 
 Test it: http://localhost:8000/socket-client.html
 
 
 And turning it into a basic chat server will look like this:
 
-<%- @codeFile('./~examples/chat-server.js') %>
+<%- @codeFile('./~examples/05-server-app/chat-server.js') %>
 
-<%- @codeFile('./~examples/chat-client.html') %>
+<%- @codeFile('./~examples/05-server-app/chat-client.html') %>
 
 Test it: http://localhost:8000/socket-client.html
 
