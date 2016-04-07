@@ -9,7 +9,7 @@ One popular use case is to serve files directly from a directory on our machine.
 
 For this, we will setup a configuration module at `config.js` that contains:
 
-<%- @codeFile('./~examples/04-server-advanced/04-server/config.js') %>
+<%- @codeFile('./~examples/04-server-advanced/config.js') %>
 
 Which our application will include via `require('./config')` (extensions are optional).
 
@@ -18,7 +18,7 @@ Which our application will include via `require('./config')` (extensions are opt
 
 The most basic way of accomplishing this, is to use [fs.readFile](https://nodejs.org/dist/latest-v5.x/docs/api/fs.html#fs_fs_readfile_file_options_callback)
 
-<%- @codeFile('./~examples/04-server-advanced/04-server/server-readfile.js') %>
+<%- @codeFile('./~examples/04-server-advanced/server-readfile.js') %>
 
 Test it: `curl http://localhost:8000/server-static.js`
 
@@ -29,7 +29,7 @@ However, readFile will read the entire file, then send the entire file. Take a m
 
 The next most basic way, is to use a [Readable Stream](https://nodejs.org/dist/latest-v5.x/docs/api/stream.html#stream_class_stream_readable) via [fs.createReadStream](https://nodejs.org/dist/latest-v5.x/docs/api/fs.html#fs_fs_createreadstream_path_options).
 
-<%- @codeFile('./~examples/04-server-advanced/04-server/server-stream.js') %>
+<%- @codeFile('./~examples/04-server-advanced/server-stream.js') %>
 
 Test it: `curl http://localhost:8000/server-static.js`
 
@@ -38,7 +38,7 @@ Test it: `curl http://localhost:8000/server-static.js`
 
 Getting more advanced here. What about outputting the contents of directories too? For this, we can use [fs.readdir](https://nodejs.org/dist/latest-v5.x/docs/api/fs.html#fs_fs_readdir_path)
 
-<%- @codeFile('./~examples/04-server-advanced/04-server/server-static.js') %>
+<%- @codeFile('./~examples/04-server-advanced/server-static.js') %>
 
 Test it: `curl http://localhost:8000`
 
