@@ -57,7 +57,7 @@ One could come up with the following:
 
 Note the introduction of a `next` callback. This allows us to chain additional or custom functionality.
 
-<%- @codeFile('./~examples/04-server-advanced/serve-static-custom.js') %>
+<%- @codeFile('./~examples/04-server-advanced/server-static-custom.js') %>
 
 
 
