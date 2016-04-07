@@ -29,7 +29,7 @@ Test it: http://localhost:8000/socket-client.html
 
 ## Your Turn
 
-It is now your turn to have a go and mash up your own solution. To help you get started, here are a bunch of ideas on how you can extend our chat application:
+It is now your turn to have a go and mash up your own solution. To help you get started, here are a bunch of ideas on how you can extend the chat application:
 
 - Chat Rooms
 	- Add support for two chat rooms
@@ -48,7 +48,7 @@ It is now your turn to have a go and mash up your own solution. To help you get 
 	- If a user has an email specified, display their avatar next to their username in the message listing
 	- When a user changes their details, automatically update all prior mentions of their details
 - Abstractions
-	- Experiment with pre-processors ([coffeescript](http://coffeescript.org/), [stylus](http://learnboost.github.com/stylus/), etc.) - [docpad](http://docpad.org) will help with this
+	- Experiment with pre-processors - [docpad](http://docpad.org) could help with this
 - Messages
 	- Relative times
 	- Markdown support
