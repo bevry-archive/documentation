@@ -65,6 +65,12 @@ Note the introduction of a `next` callback. This allows us to chain additional o
 
 In our previous example of writing the `serveStatic` what we effectively did was create a middleware, albiet a basic middleware but a middleware nonetheless. Naturally, there are already [plenty of other middlewares](https://npmjs.org/browse/keyword/middleware) published as modules by other people. This is helped by the middleware framework [Connect](http://senchalabs.org/connect/) originally by [TJ Holowaychuk](https://github.com/visionmedia).
 
+We can install connect like so:
+
+``` bash
+npm install --save connect
+```
+
 Using connect, our static file server example would become:
 
 <%- @codeFile('./~examples/04-server-advanced/connect-static.js') %>
@@ -84,6 +90,12 @@ Express can be thought of as a layer that sits ontop of connect and node's http 
 
 - Addition of routing
 - Common functionality provided through a friendly syntax
+
+We can install express like so:
+
+``` bash
+npm install --save express
+```
 
 The following is what a simple hello world server would look like with express:
 
