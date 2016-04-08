@@ -10,6 +10,12 @@ To do this, we will use [Primus](https://github.com/primus/primus) and [ws](http
 
 Primus is a wrapper library over many different [WebSockets](https://en.wikipedia.org/wiki/Websocket) libraries. WebSockets is a technology that allows browser clients to communicate with servers. Until WebSockets became a thing in 2011, such functionality was achieved via [several dodgy workarounds](http://slides.com/balupton/what).
 
+We can install primus like so:
+
+``` bash
+npm install --save primus
+```
+
 
 ### Server to Browser Relay
 
