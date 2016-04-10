@@ -31,11 +31,13 @@ module.exports = function (root, req, res, next) {
 				})
 			}
 			else {
-				fsUtil.createReadStream(path).pipe(res).on('error', function (error) {
+				var read = fsUtil.createReadStream(path)
+				read.on('error', function (error) {
 					console.log('Warning:', error.stack)
 					res.statusCode = 500
 					return res.end('500 Internal Server Error')
 				})
+				read.pipe(res)
 			}
 		})
 	})

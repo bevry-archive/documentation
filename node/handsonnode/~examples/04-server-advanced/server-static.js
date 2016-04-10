@@ -23,8 +23,8 @@ httpUtil.createServer(function (req, res) {
 		fsUtil.stat(path, function (error, stat) {
 			if ( error ) {
 				console.log('Warning:', error.stack)
-				res.statusCode = 404
-				return res.end('404 Not Found')
+				res.statusCode = 500
+				return res.end('500 Internal Server Error')
 			}
 
 			if ( stat.isDirectory() ) {
@@ -38,11 +38,13 @@ httpUtil.createServer(function (req, res) {
 				})
 			}
 			else {
-				fsUtil.createReadStream(path).pipe(res).on('error', function (error) {
+				var read = fsUtil.createReadStream(path)
+				read.on('error', function (error) {
 					console.log('Warning:', error.stack)
 					res.statusCode = 500
 					return res.end('500 Internal Server Error')
 				})
+				read.pipe(res)
 			}
 		})
 	})

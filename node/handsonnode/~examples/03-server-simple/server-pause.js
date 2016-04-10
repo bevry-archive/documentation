@@ -4,5 +4,5 @@ http.createServer(function (req, res) {
 	res.write('hello\n')
 	setTimeout(function () {
 		res.end('world\n')
-	}, 2000)
+	}, 2*1000)
 }).listen(8000)
