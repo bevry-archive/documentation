@@ -1,6 +1,6 @@
 ## Thank you
 
-Thank you to [General Assembly](http://generalassemb.ly/) in October 2012, and [Codemaster Institute](http://www.codemasterinstitute.com) in April 2016 for hosting this training.
+Thank you to [General Assembly](http://generalassemb.ly/) in October 2012 and [Codemaster Institute](http://www.codemasterinstitute.com) in April 2016 for hosting this training.
 
 Follow [Benjamin Lupton](http://balupton.com) on [Twitter](https://twitter.com/balupton) and [GitHub](https://github.com/balupton).
 
