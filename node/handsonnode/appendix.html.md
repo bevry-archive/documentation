@@ -1,8 +1,8 @@
 ## Thank you
 
-This class was originally run on October 31st, 2012 with [General Assembly](http://generalassemb.ly/). In April 2016, it received a moderate update.
+Thank you to [General Assembly](http://generalassemb.ly/) in October 2012, and [Codemaster Institute](http://www.codemasterinstitute.com) in April 2016 for hosting this training.
 
-Follow [Benjamin Lupton](http://balupton.com) on [Twitter](http://twitter.com/balupton) and [GitHub](https://github.com/balupton).
+Follow [Benjamin Lupton](http://balupton.com) on [Twitter](https://twitter.com/balupton) and [GitHub](https://github.com/balupton).
 
 
 ## Newsletter
