@@ -69,12 +69,6 @@ tasks.run();
 TaskGroup.create().addTasks(
 	['file1', 'file2', 'file3'].map((file) => (complete) => fs.stat(file, complete))
 ).done(next).run()
-
-// TaskGroup via API (same as before, but even more concise)
-TaskGroup.create({
-	next: next,
-	tasks: ['file1', 'file2', 'file3'].map((file) => (complete) => fs.stat(file, complete))
-}).run()
 ```
 
 Another big advantage of TaskGroup over async.js is TaskGroup's ability to add tasks to the group once execution has already started - this is a common use case when creating an application that must perform its actions serially, so using TaskGroup you can create a serial TaskGroup for the application, run it right away, then add the actions to the group as tasks.
