@@ -59,11 +59,11 @@ async.map(['file1','file2','file3'], fs.stat, next)
 // TaskGroup via API
 var tasks = TaskGroup.create().done(next)
 ['file1', 'file2', 'file3'].forEach(function (file) {
-	tasks.addTask(function(complete){
-		fs.stat(file, complete);
-	});
+	tasks.addTask(function (complete) {
+		fs.stat(file, complete)
+	})
 });
-tasks.run();
+tasks.run()
 
 // TaskGroup via API (same as before, but more concise)
 TaskGroup.create().done(next).addTasks(
