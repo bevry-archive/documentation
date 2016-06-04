@@ -8,7 +8,7 @@ title: Using Joe
 ### Install Joe and the Default [Console Reporter](http://npmjs.org/package/joe-reporter-console)
 
 ``` bash
-npm install --save joe joe-reporter-console
+npm install --save-dev joe joe-reporter-console
 ```
 
 
@@ -61,8 +61,8 @@ var joe = require('joe')
 A suite is a collection of tests. You define a suite by using:
 
 ``` javascript
-suite("my suite's name", function (suite,test) {
-	test("a test for my suite", function(){
+suite("my suite's name", function (suite, test) {
+	test("a test for my suite", function () {
 		// the code to run in my test
 	})
 })
@@ -71,10 +71,10 @@ suite("my suite's name", function (suite,test) {
 If you define your suite tests asynchronously, you can have your suite accept a completion callback that should be called once all your asynchronously created tests have been added:
 
 ``` javascript
-suite("my suite's name", function (suite,test,complete) {
+suite("my suite's name", function (suite, test, complete) {
 	// example setTimeout for creating a test asynchronously
-	setTimeout(function(){
-		test("a test for my suite", function(){
+	setTimeout(function () {
+		test("a test for my suite", function () {
 			// some code to run in my test
 		})
 		complete() // we have added all of our suite's tests
@@ -87,7 +87,7 @@ suite("my suite's name", function (suite,test,complete) {
 Tests are defined by:
 
 ``` javascript
-test("my test's name", function(){
+test("my test's name", function () {
 	// some code to run inside my test
 })
 ```
@@ -95,9 +95,9 @@ test("my test's name", function(){
 You can define asynchronous tests by accepting a completion callback like so:
 
 ``` javascript
-test("my test's name", function(complete){
+test("my test's name", function (complete) {
 	// example readFile to showcase an asynchronous use case
-	require('fs').readFile('some file', function(err, data){
+	require('fs').readFile('some file', function (err, data) {
 		// some code to check the output is as expected and there is no error
 		complete() // the test has now completed
 	})
@@ -111,14 +111,14 @@ When you define a test, it is added to the queue of its parent Suite, and execut
 For instance, take the following example:
 
 ``` javascript
-joe.suite('our suite', function (suite,test) {
+joe.suite('our suite', function (suite, test) {
 	test('first test', function (complete) {
-		setTimeout(function(){
+		setTimeout(function () {
 			console.log('this will be outputted second')
 			complete()
 		}, 1000)
 	})
-	test('second test', function(){
+	test('second test', function () {
 		console.log('this will be outputted third')
 	})
 	console.log('this will be outputted first')
