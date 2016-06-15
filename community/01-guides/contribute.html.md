@@ -8,7 +8,7 @@ title: Contributing
 
 ### Donations
 
-With your help, we'll be able to work on our open-source projects full time! Isn't that awesome? [Donate now to let that happen!](/donate)
+With your help, we'll be able to work on our open-source projects full time! Isn't that awesome? [Donate now to let that happen!](https://bevry.me/donate)
 
 
 ### Publicize
