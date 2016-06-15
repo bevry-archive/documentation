@@ -15,12 +15,12 @@ With your help, we'll be able to work on our open-source projects full time! Isn
 
 Help spread the word:
 
-- Join our [Slack Community](https://bevry.me/slack)
-- Join our [Google+ Community](https://bevry.me/google+)
-- Join our [Forum](https://bevry.me/forum)
-- Follow our [Blog](https://bevry.me/blog)
-- Follow our [Twitter](https://bevry.me/twitter)
-- Follow our [YouTube](https://bevry.me/youtube)
+- [Join our Slack Community](https://bevry.me/slack)
+- [Join our Google+ Community](https://bevry.me/google+)
+- [Join our Forum](https://bevry.me/forum)
+- [Follow our Blog](https://bevry.me/blog)
+- [Follow our Twitter](https://bevry.me/twitter)
+- [Follow our YouTube](https://bevry.me/youtube)
 - Talk about us and your experiences on social media like Twitter and your own blog
 - Do a short less than a minute video testimonial of our project on YouTube!
 - And just continue to be awesome
