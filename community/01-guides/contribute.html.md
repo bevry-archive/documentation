@@ -15,17 +15,20 @@ With your help, we'll be able to work on our open-source projects full time! Isn
 
 Help spread the word:
 
-- Join the [Bevry Gratipay Community](/gittip-community)
-- Join the [Bevry Google+ Community](/google+)
-- Talk about us on Social Media; Twitter, Blogging, etc.
-- Write about your experiences of our projects on your blog
+- Join our [Slack Community](https://bevry.me/slack)
+- Join our [Google+ Community](https://bevry.me/google+)
+- Join our [Forum](https://bevry.me/forum)
+- Follow our [Blog](https://bevry.me/blog)
+- Follow our [Twitter](https://bevry.me/twitter)
+- Follow our [YouTube](https://bevry.me/youtube)
+- Talk about us and your experiences on social media like Twitter and your own blog
 - Do a short less than a minute video testimonial of our project on YouTube!
 - And just continue to be awesome
 
 DocPad users can also:
 
-- Star the [DocPad GitHub Repository](https://github.com/bevry/docpad) by clicking the "Star" button on the top right
-- Star the [DocPad NPM Package](https://npmjs.org/package/docpad) by running `npm star docpad` in your terminal
+- Star the [DocPad GitHub Repository](https://github.com/docpad/docpad) by clicking the "Star" button on the top right
+- Star the [DocPad NPM Package](https://npmjs.com/package/docpad) by running `npm star docpad` in your terminal
 
 
 ### Support
