@@ -14,7 +14,7 @@ Test it: `curl http://localhost:8000`
 
 <%- @codeFile('./~examples/03-server-simple/server-pause.js') %>
 
-Bench it: `ab -n 100 -c 100 http://localhost:8000`
+Bench it: `ab -n 100 -c 100 http://localhost:8000/`
 
 
 ## Echo Server
