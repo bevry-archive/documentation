@@ -19,10 +19,6 @@ This is Bevry's supported guide for installing [Node.js](http://nodejs.org/) on 
 
 	Xcode may or may not be necessary for the above command, if it fails, [Download & Install Xcode](http://developer.apple.com/xcode/), and try again.
 
-1. [Download & Install Git](http://git-scm.com/download)
-
-	If you use [homebrew](http://brew.sh), you can run `brew install git` instead of manually installing and downloading git.
-
 1. Ensure correct permissions are set for `/usr/local`:
 
 	``` bash
