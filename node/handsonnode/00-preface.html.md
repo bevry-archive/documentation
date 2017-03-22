@@ -1,9 +1,9 @@
 
 ## Recording
 
-An earlier edition of this training has been recorded in 2012.
+[An earlier edition of this training has been recorded in 2012.](https://www.youtube.com/watch?v=_l96hPlqzcI&list=PLYVl5EnzwqsQs0tBLO6ug6WbqAbrpVbNf)
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/_l96hPlqzcI?list=PLYVl5EnzwqsQs0tBLO6ug6WbqAbrpVbNf" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/_l96hPlqzcI?list=PLYVl5EnzwqsQs0tBLO6ug6WbqAbrpVbNf" frameborder="0" allowfullscreen></iframe>
 
 
 ## Introduction
