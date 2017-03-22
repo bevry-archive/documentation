@@ -7,9 +7,9 @@ This is Bevry's supported guide for installing [Node.js](http://nodejs.org/) on 
 
 ## On Linux (Mac OSX, Ubuntu, Fedora, etc)
 
-### Preperation
+### Preparation
 
-#### Mac OSX Preperation
+#### Mac OSX Preparation
 
 1. Install Command Line Tools:
 
@@ -30,14 +30,14 @@ This is Bevry's supported guide for installing [Node.js](http://nodejs.org/) on 
 	```
 
 
-#### APT Linux Preperation (Ubuntu)
+#### APT Linux Preparation (Ubuntu)
 
 ``` bash
 sudo apt-get update && sudo apt-get install curl build-essential openssl libssl-dev git python
 ```
 
 
-#### YUM Linux Preperation (Fedora)
+#### YUM Linux Preparation (Fedora)
 
 ``` bash
 sudo yum -y install tcsh scons gcc-c++ glibc-devel openssl-devel git python
