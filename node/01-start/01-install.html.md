@@ -33,7 +33,8 @@ This is Bevry's supported guide for installing [Node.js](http://nodejs.org/) on 
 #### APT Linux Preparation (Ubuntu)
 
 ``` bash
-sudo apt-get update && sudo apt-get install curl build-essential openssl libssl-dev git python
+sudo apt-get update
+sudo apt-get install curl build-essential openssl libssl-dev git python
 ```
 
 
