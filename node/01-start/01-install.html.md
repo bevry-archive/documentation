@@ -9,7 +9,7 @@ This is Bevry's supported guide for installing [Node.js](http://nodejs.org/) on 
 
 ### Preparation
 
-#### Mac OSX Preparation
+#### Mac Preparation
 
 1. Install Command Line Tools:
 
