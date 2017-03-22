@@ -70,9 +70,9 @@ sudo yum -y install tcsh scons gcc-c++ glibc-devel openssl-devel git python
 
 ## On Windows
 
-1. ### [Download & Install Git](http://git-scm.com/download)
+1. [Download & Install Git](http://git-scm.com/download)
 
 	IMPORTANT. When installing, make sure you install with the option of making git available to the windows command line.
 
-2. ### [Download & Install Node.js](http://nodejs.org/#download)
+2. [Download & Install Node.js](http://nodejs.org/#download)
 
