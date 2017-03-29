@@ -26,4 +26,4 @@ At the end of the class, students will have gained a grasp on node's ecosystem a
 
 ### Presenter
 
-[Benjamin Lupton](http://balupton.com/) is the founder of [Bevry](http://bevry.me), an open-company and community dedicated to empowering developers everywhere. He has worked in web devleopment since 2005, and specialised in JavaScript since 2009. He has created over 200 open-source JavaScript projects, which have been used in some of the world's biggest web-sites/apps (Basecamp, Spotify, Ustream) and by some of the world's biggest companies (Microsoft, Adobe, GitHub, Atlassian).
+[Benjamin Lupton](http://balupton.com/) is the founder of [Bevry](http://bevry.me), an open-company and community dedicated to empowering developers everywhere. He has worked in web development since 2005, and specialised in JavaScript since 2009. He has created over 200 open-source JavaScript projects, which have been used in some of the world's biggest web-sites/apps (Basecamp, Spotify, Ustream) and by some of the world's biggest companies (Microsoft, Adobe, GitHub, Atlassian).
