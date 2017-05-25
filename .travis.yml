@@ -1,13 +1,16 @@
-# August 25, 2015
+# 2017 May 25
 # https://docpad.org/docs/deploy
-
-# Use the latest travis infrastructure
+# https://github.com/balupton/awesome-travis
 sudo: false
-
-# We use node
 language: ruby
 rvm:
   - "2.2"
+install:
+  - gem install travis --no-rdoc --no-ri
+script:
+  - eval "$(curl -s https://raw.githubusercontent.com/balupton/awesome-travis/master/scripts/travis-another.bash)"
+# travis env set OTHER_REPO_SLUG 'bevry/website' --public
+# travis env set GITHUB_TRAVIS_TOKEN "$GITHUB_TRAVIS_TOKEN"
 
 # Custom Notifications
 # travis encrypt "$TRAVIS_NOTIFICATION_EMAIL" --add notifications.email.recipients
@@ -18,25 +21,3 @@ notifications:
       secure: NGw43fBO6uTm1F+NCV2x1hvKFDW7Ecg3aVU/vOrkptzgcYx4jS/j2wAWtIA8Grbxcnl8qtCypRhfnRcIsgzD/b6w7UqkhfnWxOO9/cMgD/5oVNKhIyCg52Kfr2tbpCiDpC4ODQI80+wQjw4zpQahEvYq9vY1l0cQo5LAnkNRGu8=
   slack:
     secure: IPqf2kcVUFnGVBXdB20WvA01XLKn1MbrOhcKB92OxUrHcD1QDSuSc+rgOQh/Sslh8TVGv8z3X9e89wG9hEis3Sp5/7inZc6y2JbVpwwJZczV3zJkerK45Zkiz2GoVt91P1Du03/KyTkQwVg3MhD0B2cvClgpCeIDQ5qG9OmlExg=
-
-# Prepare and run our tests
-# This should be easier, but https://github.com/travis-ci/travis.rb/issues/315 is a thing
-# Doesn't use --debug on `travis login` as that will output our github token
-install: gem install travis --no-rdoc --no-ri
-script: >
-  if [ ! -z $GITHUB_TRAVIS_TOKEN ]; then
-    echo "Deploying...";
-    travis login --skip-completion-check --org --github-token "$GITHUB_TRAVIS_TOKEN";
-    export TRAVIS_ACCESS_TOKEN=`cat ~/.travis/config.yml | grep access_token | sed 's/ *access_token: *//'`;
-    travis restart --debug --skip-completion-check --org -r "$DEPLOY_REPO_SLUG" -t "$TRAVIS_ACCESS_TOKEN";
-    echo "Deployed";
-  else
-    echo "Skipped deploy";
-  fi
-
-# Custom deployment
-# travis encrypt "GITHUB_TRAVIS_TOKEN=$GITHUB_TRAVIS_TOKEN" --add env.global
-env:
-  global:
-    - DEPLOY_REPO_SLUG='bevry/learn'  # this is the repo owner and repo name that you want tested and deployed, set correctly
-    - secure: GQAAC7w6vr2NusbFSNlA2zH4F6oB/7ArpDAQUQtocubWgjfP5XwC7kSMO/wgIOCTJC2nb3shLgsA6ao8JZFx+7aERv3y3hFb1TEhYPq2sYJRN0s6r188XzildH2s3aSYZ5QceoHwlfh7QdfaWudquJoiukCktcd8HtFQDwdv4fo=
