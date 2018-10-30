@@ -1,12 +1,14 @@
+'use strict'
+
 // Requires
-var express = require('express')
-var primus = require('primus')
-var pathUtil = require('path')
+const express = require('express')
+const Primus = require('primus')
+const pathUtil = require('path')
 
 // Application
-var app = require('express')()
-var server = require('http').createServer(app)
-var primus = new require('primus')(server, { transformer: 'websockets' })
+const app = require('express')()
+const server = require('http').createServer(app)
+const primus = new Primus(server, { transformer: 'websockets' })
 
 // Middlewares
 app.get('/', function (req, res) {
@@ -18,9 +20,9 @@ app.use(function (req, res) {
 
 // Socket
 primus.on('connection', function (spark) {
-	console.log('connection has the following headers', spark.headers);
-	console.log('connection was made from', spark.address);
-	console.log('connection id', spark.id);
+	console.log('connection has the following headers', spark.headers)
+	console.log('connection was made from', spark.address)
+	console.log('connection id', spark.id)
 
 	// Receive messages
 	spark.on('data', function (message) {

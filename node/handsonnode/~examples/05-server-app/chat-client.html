@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>My Web App</title>
 	<style>
 		.messages {
-			max-height: 500px
-			border: 1px solid gray
-			overflow: auto
+			max-height: 500px;
+			border: 1px solid gray;
+			overflow: auto;
 		}
 		.messageInput {
-			width: 100%
-			padding: 1em
+			width: 100%;
+			padding: 1em;
 		}
 	</style>
 </head>
+
 <body>
 	<!-- App -->
 	<div class="app">
@@ -29,7 +31,7 @@
 		var primus = new Primus()
 
 		// Ready
-		$(function(){
+		$(function () {
 			// Fetch
 			var $app = $('.app')
 			var $messages = $app.find('.messages')
@@ -51,7 +53,7 @@
 
 			// Send message
 			$messageInput.on('keypress', function (event) {
-				if ( event.keyCode === 13 ) {  // enter
+				if (event.keyCode === 13) {  // enter
 					var message = $messageInput.val().trim()
 					primus.write(message)
 					$messageInput.val('')  // clear input
@@ -60,4 +62,5 @@
 		})
 	</script>
 </body>
+
 </html>

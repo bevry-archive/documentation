@@ -1,4 +1,6 @@
-var net = require('net')
+'use strict'
+
+const net = require('net')
 net.createServer(function (socket) {
 	socket.write('Talk to me.\n')
 	socket.on('data', function (data) {

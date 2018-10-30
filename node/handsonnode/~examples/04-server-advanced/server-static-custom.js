@@ -1,7 +1,9 @@
+'use strict'
+
 // Requires
-var httpUtil = require('http')
-var serveStatic = require('./serve-static')
-var config = require('./config')
+const httpUtil = require('http')
+const serveStatic = require('./serve-static')
+const config = require('./config')
 
 // Server
 httpUtil.createServer(function (req, res) {

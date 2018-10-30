@@ -1,9 +1,11 @@
+'use strict'
+
 // Requires
-var express = require('express')
-var config = require('./config')
+const express = require('express')
+const config = require('./config')
 
 // Application
-var app = express()
+const app = express()
 
 // Middlewares
 
@@ -21,4 +23,4 @@ app.use(function (req, res) {
 
 
 // Server
-var server = app.listen(8000)
+const server = app.listen(8000)

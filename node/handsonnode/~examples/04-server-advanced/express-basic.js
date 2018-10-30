@@ -1,13 +1,15 @@
+'use strict'
+
 // Requires
-var express = require('express')
+const express = require('express')
 
 // Application
-var app = express()
+const app = express()
 
 // Routes
 // These make things easier
 app.get('/', function (req, res) {
-  res.send('hello world')
+	res.send('hello world')
 })
 
 // Fallback middleware
@@ -17,4 +19,4 @@ app.use(function (req, res) {
 })
 
 // Server
-var server = app.listen(8000)
+const server = app.listen(8000)

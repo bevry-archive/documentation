@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>My Web App</title>
 </head>
+
 <body>
 	<!-- Scripts -->
 	<script src="/primus/primus.js"></script>
@@ -14,7 +16,7 @@
 		primus.on('data', function (message) {
 			alert(message)
 			var response = prompt('What would you like to say?')
-			if ( response ) {
+			if (response) {
 				primus.write(response)
 				alert('Sent')
 			}
@@ -22,4 +24,5 @@
 	</script>
 	Hello.
 </body>
+
 </html>

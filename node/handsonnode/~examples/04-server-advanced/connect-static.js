@@ -1,10 +1,11 @@
+'use strict'
+
 // Requires
-var connect = require('connect')
-var config = require('./config')
+const connect = require('connect')
+const config = require('./config')
 
 // Server
-var app = connect()
-
+const app = connect()
 
 // Middlewares
 
