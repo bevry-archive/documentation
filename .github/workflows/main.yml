@@ -1,2 +1,0 @@
-- name: Run woke
-  uses: get-woke/woke-action@v0
